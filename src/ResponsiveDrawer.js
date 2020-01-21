@@ -5,13 +5,14 @@ import Divider from '@material-ui/core/Divider';
 import Drawer from '@material-ui/core/Drawer';
 import Hidden from '@material-ui/core/Hidden';
 import IconButton from '@material-ui/core/IconButton';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import MailIcon from '@material-ui/icons/Mail';
 import MenuIcon from '@material-ui/icons/Menu';
+import HomeIcon from '@material-ui/icons/Home';
+import InfoIcon from '@material-ui/icons/Info';
+import GavelIcon from '@material-ui/icons/Gavel';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
@@ -29,6 +30,9 @@ const useStyles = makeStyles(theme => ({
     },
   },
   appBar: {
+    [theme.breakpoints.up('sm')]: {
+      paddingLeft: drawerWidth,
+    },
     zIndex: theme.zIndex.drawer + 1,
   },
   menuButton: {
@@ -62,21 +66,21 @@ function ResponsiveDrawer(props) {
       <div className={classes.toolbar} />
       <Divider />
       <List>
-        {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
+        <ListItem button key={'Home'}>
+          <ListItemIcon><HomeIcon /></ListItemIcon>
+          <ListItemText primary={'Home'} />
+        </ListItem>
+        <ListItem button key={'Rules'}>
+          <ListItemIcon><GavelIcon /></ListItemIcon>
+          <ListItemText primary={'Rules'} />
+        </ListItem>
       </List>
       <Divider />
       <List>
-        {['All mail', 'Trash', 'Spam'].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
+        <ListItem button key={'Version'}>
+          <ListItemIcon><InfoIcon /></ListItemIcon>
+          <ListItemText primary={'Version'} />
+        </ListItem>
       </List>
     </div>
   );
@@ -96,7 +100,7 @@ function ResponsiveDrawer(props) {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap>
-            Responsive drawer
+            Official DFL
           </Typography>
         </Toolbar>
       </AppBar>
