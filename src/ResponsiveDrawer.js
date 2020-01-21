@@ -28,6 +28,7 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
   },
   drawer: {
+    position: 'relative',
     [theme.breakpoints.up('sm')]: {
       width: drawerWidth,
       flexShrink: 0,
@@ -52,6 +53,10 @@ const useStyles = makeStyles(theme => ({
   content: {
     flexGrow: 1,
     padding: theme.spacing(3),
+  },
+  version: {
+    position: 'absolute',
+    bottom: 0,
   },
 }));
 
@@ -84,7 +89,7 @@ function ResponsiveDrawer(props) {
         </ListItem>
       </List>
       <Divider />
-      <List>
+      <List className={classes.version}>
         <ListItem key={'Version'}>
           <ListItemIcon><InfoIcon /></ListItemIcon>
           <ListItemText primary={'Version 0.1.0'} />
