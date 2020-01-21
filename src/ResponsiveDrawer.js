@@ -94,7 +94,7 @@ function ResponsiveDrawer(props) {
       <List className={classes.version}>
         <ListItem key={'Version'}>
           <ListItemIcon><InfoIcon /></ListItemIcon>
-          <ListItemText primary={'Version 0.1.0'} />
+          <ListItemText primary={'Version 0.2.0'} />
         </ListItem>
       </List>
     </div>
