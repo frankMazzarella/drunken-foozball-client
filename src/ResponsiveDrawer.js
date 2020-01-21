@@ -57,6 +57,8 @@ const useStyles = makeStyles(theme => ({
   version: {
     position: 'absolute',
     bottom: 0,
+    backgroundColor: '#464646',
+    width: '100%',
   },
 }));
 
