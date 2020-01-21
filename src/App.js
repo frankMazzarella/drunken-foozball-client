@@ -1,6 +1,7 @@
 import React from 'react';
 import { ThemeProvider } from '@material-ui/core/styles';
 import { createMuiTheme } from '@material-ui/core/styles';
+import { BrowserRouter } from 'react-router-dom';
 
 import ResponsiveDrawer from './ResponsiveDrawer';
 
@@ -12,9 +13,11 @@ function App() {
   });
   
   return (
-    <ThemeProvider theme={theme}>
-      <ResponsiveDrawer />
-    </ThemeProvider>
+    <BrowserRouter>
+      <ThemeProvider theme={theme}>
+        <ResponsiveDrawer />
+      </ThemeProvider>
+    </BrowserRouter>
   );
 }
 
