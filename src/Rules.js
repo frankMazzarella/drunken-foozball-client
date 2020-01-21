@@ -1,5 +1,9 @@
-const Rules = props => (
-  'Rules'
-);
+import React, { Component } from 'react';
 
-export default Rules;
+export default class Item extends Component {
+  render() {
+    return (
+      <div>Rules</div>
+    );
+  }
+}
