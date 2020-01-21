@@ -83,7 +83,7 @@ function ResponsiveDrawer(props) {
       <List>
         <ListItem key={'Version'}>
           <ListItemIcon><InfoIcon /></ListItemIcon>
-          <ListItemText primary={'Version'} />
+          <ListItemText primary={'Version 0.1.0'} />
         </ListItem>
       </List>
     </div>
@@ -118,6 +118,7 @@ function ResponsiveDrawer(props) {
               anchor={theme.direction === 'rtl' ? 'right' : 'left'}
               open={mobileOpen}
               onClose={handleDrawerToggle}
+              onClick={handleDrawerToggle}
               classes={{
                 paper: classes.drawerPaper,
               }}
