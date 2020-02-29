@@ -13,6 +13,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import MenuIcon from '@material-ui/icons/Menu';
 import HomeIcon from '@material-ui/icons/Home';
 import InfoIcon from '@material-ui/icons/Info';
+import EqualizerIcon from '@material-ui/icons/Equalizer';
 import GavelIcon from '@material-ui/icons/Gavel';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
@@ -20,6 +21,7 @@ import { makeStyles, useTheme } from '@material-ui/core/styles';
 
 import Home from './Home';
 import Rules from './Rules';
+import Stats from './Stats';
 
 const drawerWidth = 240;
 
@@ -89,6 +91,10 @@ function ResponsiveDrawer(props) {
           <ListItemIcon><GavelIcon /></ListItemIcon>
           <ListItemText primary="Rules" />
         </ListItem>
+        <ListItem button component={Link} to="/stats" key="Stats" onClick={handleDrawerClose}>
+          <ListItemIcon><EqualizerIcon /></ListItemIcon>
+          <ListItemText primary="Stats" />
+        </ListItem>
       </List>
       <Divider />
       <List className={classes.version}>
@@ -154,6 +160,7 @@ function ResponsiveDrawer(props) {
         <div className={classes.toolbar} />
         <Switch>
           <Route path="/rules" component={Rules} />
+          <Route path="/stats" component={Stats} />
           <Route path="*" component={Home} />
         </Switch>
       </main>
