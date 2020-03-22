@@ -8,18 +8,16 @@ import RuleSection from './RuleSection';
 export default class RuleChapter extends Component {
   render() {
     return (
-      <div>
-        <Card>
-          <CardHeader title={this.props.chapterTitle} />
-          <CardContent>
-            {
-              this.props.sections.map((section) => {
-                return <RuleSection {...section}></RuleSection>
-              })
-            }
-          </CardContent>
-        </Card>
-      </div>
+      <Card raised>
+        <CardHeader title={this.props.chapterTitle} />
+        <CardContent>
+          {
+            this.props.sections.map((section, index) => {
+              return <RuleSection key={index} {...section}></RuleSection>
+            })
+          }
+        </CardContent>
+      </Card>
     );
   }
 }
