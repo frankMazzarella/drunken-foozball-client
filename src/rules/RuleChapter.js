@@ -1,23 +1,30 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardContent from '@material-ui/core/CardContent';
 
 import RuleSection from './RuleSection';
 
-export default class RuleChapter extends Component {
-  render() {
-    return (
-      <Card raised>
-        <CardHeader title={this.props.chapterTitle} />
-        <CardContent>
-          {
-            this.props.sections.map((section, index) => {
-              return <RuleSection key={index} {...section}></RuleSection>
-            })
-          }
-        </CardContent>
-      </Card>
-    );
+const useStyles = makeStyles(() => ({
+  root: {
+    margin: `15px auto`
   }
+}));
+
+export default function RuleChapter(props) {
+  const classes = useStyles();
+
+  return (
+    <Card className={classes.root}>
+      <CardHeader title={`${props.number}. ${props.chapterTitle}`} />
+      <CardContent>
+        {
+          props.sections.map((section, index) => {
+            return <RuleSection key={index} number={`${props.number}.${index + 1}`} {...section}></RuleSection>
+          })
+        }
+      </CardContent>
+    </Card>
+  );
 }
