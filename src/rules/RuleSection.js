@@ -10,7 +10,7 @@ export default class RuleSection extends Component {
         {
           this.props.subSections.map((subSection, index) => {
             return (
-              <ul>
+              <ul key={index}>
                 <li>{`${this.props.number}.${index + 1}. ${subSection}`}</li>
               </ul>
             )
