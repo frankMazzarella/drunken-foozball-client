@@ -14,14 +14,18 @@ const useStyles = makeStyles(() => ({
 
 export default function RuleChapter(props) {
   const classes = useStyles();
+  const { chapterNumber } = props;
 
   return (
     <Card className={classes.root}>
-      <CardHeader title={`${props.number}. ${props.chapterTitle}`} />
+      <CardHeader title={`${chapterNumber}. ${props.chapterTitle}`} />
       <CardContent>
         {
           props.sections.map((section, index) => {
-            return <RuleSection key={index} number={`${props.number}.${index + 1}`} {...section}></RuleSection>
+            const sectionNumber = index + 1;
+            return (
+              <RuleSection key={index} sectionNumber={`${chapterNumber}.${sectionNumber}`} {...section}></RuleSection>
+            )
           })
         }
       </CardContent>

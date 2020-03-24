@@ -33,7 +33,7 @@ export default function Rules() {
         </Card>
         {
           rules.map((chapter, index) => {
-            return <RuleChapter key={index} number={index + 1} {...chapter} />
+            return <RuleChapter key={index} chapterNumber={index + 1} {...chapter} />
           })
         }
       </Grid>

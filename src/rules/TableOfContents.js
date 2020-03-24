@@ -1,25 +1,28 @@
 import React, { Component } from 'react';
+import { Link } from 'react-scroll';
 
 import rules from './rules.json';
 import { Typography } from '@material-ui/core';
 
 export default class TableOfContents extends Component {
   getChapters() {
-    return rules.map((chapter, chapterIndex) => {
+    return rules.map((chapter, index) => {
+      const chapterNumber = index + 1;
       return (
-        <ul key={chapterIndex}>
-          <li><Typography variant="body1">{`${chapterIndex + 1}. ${chapter.chapterTitle}`}</Typography></li>
-          {this.getSections(chapter, chapterIndex)}
+        <ul key={chapterNumber}>
+          <li><Typography variant="body1">{`${chapterNumber + 1}. ${chapter.chapterTitle}`}</Typography></li>
+          {this.getSections(chapter, chapterNumber)}
         </ul>
       )
     })
   }
 
-  getSections(chapter, chapterIndex) {
-    return chapter.sections.map((section, sectionIndex) => {
+  getSections(chapter, chapterNumber) {
+    return chapter.sections.map((section, index) => {
+      const sectionNumber = `${chapterNumber}.${index + 1}`
       return (
-        <Typography key={sectionIndex} variant="body2">
-          {`${chapterIndex + 1}.${sectionIndex + 1}. ${section.sectionTitle}`}
+        <Typography key={index} variant="body2">
+          <Link to={sectionNumber} duration={1000} offset={-65} smooth>{`${sectionNumber}. ${section.sectionTitle}`}</Link>
         </Typography>
       )
     })
