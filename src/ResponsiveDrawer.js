@@ -1,25 +1,30 @@
 import React from 'react';
 import { Route, Switch, Link } from 'react-router-dom';
-import AppBar from '@material-ui/core/AppBar';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import Divider from '@material-ui/core/Divider';
-import Drawer from '@material-ui/core/Drawer';
-import Hidden from '@material-ui/core/Hidden';
-import IconButton from '@material-ui/core/IconButton';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
 import MenuIcon from '@material-ui/icons/Menu';
 import HomeIcon from '@material-ui/icons/Home';
 import InfoIcon from '@material-ui/icons/Info';
+import EqualizerIcon from '@material-ui/icons/Equalizer';
 import GavelIcon from '@material-ui/icons/Gavel';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
+import {
+  AppBar,
+  CssBaseline,
+  Divider,
+  Drawer,
+  Hidden,
+  IconButton,
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
+  Toolbar,
+  Typography,
+  makeStyles,
+  useTheme
+} from '@material-ui/core';
 
-import Home from './Home';
-import Rules from './Rules';
+import Home from './home/Home';
+import Stats from './stats/Stats';
+import Rules from './rules/Rules';
 
 const drawerWidth = 240;
 
@@ -89,12 +94,16 @@ function ResponsiveDrawer(props) {
           <ListItemIcon><GavelIcon /></ListItemIcon>
           <ListItemText primary="Rules" />
         </ListItem>
+        <ListItem button component={Link} to="/stats" key="Stats" onClick={handleDrawerClose}>
+          <ListItemIcon><EqualizerIcon /></ListItemIcon>
+          <ListItemText primary="Stats" />
+        </ListItem>
       </List>
       <Divider />
       <List className={classes.version}>
         <ListItem key={'Version'}>
           <ListItemIcon><InfoIcon /></ListItemIcon>
-          <ListItemText primary={'Version 0.2.0'} />
+          <ListItemText primary={'Version 1.0.0'} />
         </ListItem>
       </List>
     </div>
@@ -154,6 +163,7 @@ function ResponsiveDrawer(props) {
         <div className={classes.toolbar} />
         <Switch>
           <Route path="/rules" component={Rules} />
+          <Route path="/stats" component={Stats} />
           <Route path="*" component={Home} />
         </Switch>
       </main>

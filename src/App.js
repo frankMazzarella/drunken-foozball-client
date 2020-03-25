@@ -1,7 +1,6 @@
 import React from 'react';
-import { ThemeProvider } from '@material-ui/core/styles';
-import { createMuiTheme } from '@material-ui/core/styles';
 import { BrowserRouter } from 'react-router-dom';
+import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
 import ResponsiveDrawer from './ResponsiveDrawer';
 
