@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-scroll';
+import { Typography } from '@material-ui/core';
 
 import rules from './rules.json';
-import { Typography } from '@material-ui/core';
 
 export default class TableOfContents extends Component {
   getChapters() {
