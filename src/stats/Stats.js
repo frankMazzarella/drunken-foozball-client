@@ -1,10 +1,25 @@
 import React, { Component } from 'react';
+import Card from '@material-ui/core/Card';
+import CardHeader from '@material-ui/core/CardHeader';
+import Grid from '@material-ui/core/Grid';
+
 import './stats_style.css'
 
 export default class Item extends Component {
+  warning = `NOTICE: THE S.A.M. TEAM IS CURRENTLY UNDER INVESTIGATION FOR CHEATING
+    AND UNSPORTSMANLIKE CONDUCT DURING THE 2019 DRUNKEN FOOZBALL CHAMPIONSHIP.`
+
   render() {
     return (
-      <div>
+      <React.Fragment>
+        <Grid container direction="column" alignItems="center">
+          <Grid item sm={10} lg={8}>
+            <Card raised>
+              <CardHeader title={this.warning} />
+            </Card>
+          </Grid>
+        </Grid>
+        <br />
         <h1 id="statsheader">Stats</h1>
         <h2 id="positionheader">Strikers</h2>
         <table id="statstable">
@@ -126,7 +141,7 @@ export default class Item extends Component {
             </tr>
           </tbody>
         </table>
-      </div>
+      </React.Fragment>
     );
   }
 }
