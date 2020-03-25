@@ -22,7 +22,7 @@ import {
   useTheme
 } from '@material-ui/core';
 
-import Home from './Home';
+import Home from './home/Home';
 import Stats from './stats/Stats';
 import Rules from './rules/Rules';
 
