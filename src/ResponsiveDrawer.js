@@ -21,7 +21,7 @@ import { makeStyles, useTheme } from '@material-ui/core/styles';
 
 import Home from './Home';
 import Rules from './Rules';
-import Stats from './Stats';
+import Stats from './stats/Stats';
 
 const drawerWidth = 240;
 
