@@ -1,17 +1,26 @@
-import React, { Component } from 'react';
-import { Button } from '@material-ui/core';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { Grid, makeStyles } from '@material-ui/core';
 
-import logo from './logo.png';
+import logo from './logo.svg';
 
-export default class Home extends Component {
-  render() {
-    return (
-      <React.Fragment>
-        <img src={logo} alt="img"></img>
-        <br /><br />
-        <Button variant="contained" component={Link} to="/rules">Official DFL Rules</Button>
-      </React.Fragment>
-    );
+const useStyles = makeStyles(() => ({
+  logo: {
+    display: 'block',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    width: '100%'
   }
+}));
+
+export default function Home() {
+  const classes = useStyles();
+
+  return (
+    <Grid container direction="column" alignItems="center">
+      <Grid item sm={10} lg={8}>
+        <img src={logo} alt="logo" className={classes.logo} />
+        <br /><br />
+      </Grid>
+    </Grid>
+  );
 }
