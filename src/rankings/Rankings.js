@@ -1,5 +1,16 @@
 import React from 'react';
-import { Grid, makeStyles, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@material-ui/core';
+import {
+  Grid,
+  makeStyles,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
+  Card,
+  CardHeader
+} from '@material-ui/core';
 
 const useStyles = makeStyles(() => ({
   header: {
@@ -22,6 +33,7 @@ const useStyles = makeStyles(() => ({
     borderCollapse: 'collapse',
     textAlign: 'center',
     border: '1px solid #61978e',
+    marginTop: 15,
     padding: 10,
   },
   team: {
@@ -55,9 +67,14 @@ const ranks = [
 
 export default function Home() {
   const classes = useStyles();
+  const warning = `NOTICE: The S.A.M. team is currently under investigation for cheating
+    and unsportsman like conduct during the 2019 Drunken Foozball Championship.`
 
   return (
     <Grid container direction="column" alignItems="center">
+      <Card raised>
+        <CardHeader title={warning} />
+      </Card>
       <TableContainer>
         <Table className={classes.table}>
           <TableHead>
