@@ -5,6 +5,7 @@ import HomeIcon from '@material-ui/icons/Home';
 import InfoIcon from '@material-ui/icons/Info';
 import EqualizerIcon from '@material-ui/icons/Equalizer';
 import GavelIcon from '@material-ui/icons/Gavel';
+import FormatListNumberedIcon from '@material-ui/icons/FormatListNumbered';
 import {
   AppBar,
   CssBaseline,
@@ -25,6 +26,7 @@ import {
 import Home from './home/Home';
 import Stats from './stats/Stats';
 import Rules from './rules/Rules';
+import Rankings from './rankings/Rankings';
 
 const drawerWidth = 240;
 
@@ -44,6 +46,7 @@ const useStyles = makeStyles(theme => ({
       paddingLeft: drawerWidth,
     },
     zIndex: theme.zIndex.drawer + 1,
+    backgroundColor: '#61978e',
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -98,12 +101,16 @@ function ResponsiveDrawer(props) {
           <ListItemIcon><EqualizerIcon /></ListItemIcon>
           <ListItemText primary="Stats" />
         </ListItem>
+        <ListItem button component={Link} to="/rankings" key="Rankings" onClick={handleDrawerClose}>
+          <ListItemIcon><FormatListNumberedIcon /></ListItemIcon>
+          <ListItemText primary="Rankings" />
+        </ListItem>
       </List>
       <Divider />
       <List className={classes.version}>
         <ListItem key={'Version'}>
           <ListItemIcon><InfoIcon /></ListItemIcon>
-          <ListItemText primary={'Version 1.0.1'} />
+          <ListItemText primary={'Version 1.1.0'} />
         </ListItem>
       </List>
     </div>
@@ -124,7 +131,7 @@ function ResponsiveDrawer(props) {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap>
-            Official DFL
+            Welcome to the Drunken Foozball League
           </Typography>
         </Toolbar>
       </AppBar>
@@ -164,6 +171,7 @@ function ResponsiveDrawer(props) {
         <Switch>
           <Route path="/rules" component={Rules} />
           <Route path="/stats" component={Stats} />
+          <Route path="/rankings" component={Rankings} />
           <Route path="*" component={Home} />
         </Switch>
       </main>
