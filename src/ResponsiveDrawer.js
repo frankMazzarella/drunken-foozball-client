@@ -46,7 +46,7 @@ const useStyles = makeStyles(theme => ({
       paddingLeft: drawerWidth,
     },
     zIndex: theme.zIndex.drawer + 1,
-	backgroundColor: '#61978E',
+    backgroundColor: '#61978e',
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -101,7 +101,7 @@ function ResponsiveDrawer(props) {
           <ListItemIcon><EqualizerIcon /></ListItemIcon>
           <ListItemText primary="Stats" />
         </ListItem>
-		<ListItem button component={Link} to="/rankings" key="Rankings" onClick={handleDrawerClose}>
+        <ListItem button component={Link} to="/rankings" key="Rankings" onClick={handleDrawerClose}>
           <ListItemIcon><FormatListNumberedIcon /></ListItemIcon>
           <ListItemText primary="Rankings" />
         </ListItem>
@@ -171,7 +171,7 @@ function ResponsiveDrawer(props) {
         <Switch>
           <Route path="/rules" component={Rules} />
           <Route path="/stats" component={Stats} />
-		  <Route path="/rankings" component={Rankings} />
+          <Route path="/rankings" component={Rankings} />
           <Route path="*" component={Home} />
         </Switch>
       </main>
