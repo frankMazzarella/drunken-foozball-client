@@ -34,12 +34,10 @@ export default function Home() {
         <br /><br />
       </Grid>
 	  <Grid item sm={10} lg={10}>
-		<h1 className={classes.header}>Grab Your Rods</h1>
+		<h1 className={classes.header}>Screw the Corona</h1>
 	  </Grid>
 	  <Grid item sm={10} lg={10}>
-		<p className={classes.story}>The new DFL website is officially here, boys and girls!  As you can see above, there is a new, badass logo.  There is speculation that this logo was inspiried
-			by a photo of the great Lep, but that is not officially recognized.  The website also includes an all-new stats page, and many more improvements are on the way!  We will keep you
-			all updated on the progress and look forward to the next DFL tournament!  Hopefully, there will be a worthy battle for second place!
+		<p className={classes.story}>The DFL took a rare opportunity to host a tournament amid the coronavirus pandemic recently.  Playing outdoors, since the virus is afraid of sunlight, the latest tournament featured the DFL's newest team, Size Matters.  Free Will came out a strong, defeating Rock of Gibraltar 10-1 before falling in an epic against S.A.M. 10-9.  They'd fight their way back to the championship match, though, and in a stunning upset, they'd win two straight against S.A.M. to claim their first title of 2020.  The race to New Year's Eve looks a lot more interesting now.
 		</p>
 	  </Grid>
     </Grid>

@@ -6,6 +6,7 @@ import InfoIcon from '@material-ui/icons/Info';
 import EqualizerIcon from '@material-ui/icons/Equalizer';
 import GavelIcon from '@material-ui/icons/Gavel';
 import FormatListNumberedIcon from '@material-ui/icons/FormatListNumbered';
+import EmojiEventsIcon from '@material-ui/icons/EmojiEvents';
 import {
   AppBar,
   CssBaseline,
@@ -27,6 +28,7 @@ import Home from './home/Home';
 import Stats from './stats/Stats';
 import Rules from './rules/Rules';
 import Rankings from './rankings/Rankings';
+import Tournaments from './tournaments/Tournaments';
 
 const drawerWidth = 240;
 
@@ -101,9 +103,13 @@ function ResponsiveDrawer(props) {
           <ListItemIcon><EqualizerIcon /></ListItemIcon>
           <ListItemText primary="Stats" />
         </ListItem>
-		<ListItem button component={Link} to="/rankings" key="Rankings" onClick={handleDrawerClose}>
+		    <ListItem button component={Link} to="/rankings" key="Rankings" onClick={handleDrawerClose}>
           <ListItemIcon><FormatListNumberedIcon /></ListItemIcon>
           <ListItemText primary="Rankings" />
+        </ListItem>
+        <ListItem button component={Link} to="/tournaments" key="Tournaments" onClick={handleDrawerClose}>
+          <ListItemIcon><EmojiEventsIcon /></ListItemIcon>
+          <ListItemText primary="Tournaments" />
         </ListItem>
       </List>
       <Divider />
@@ -171,7 +177,8 @@ function ResponsiveDrawer(props) {
         <Switch>
           <Route path="/rules" component={Rules} />
           <Route path="/stats" component={Stats} />
-		  <Route path="/rankings" component={Rankings} />
+		      <Route path="/rankings" component={Rankings} />
+          <Route path="/tournaments" component={Tournaments} />
           <Route path="*" component={Home} />
         </Switch>
       </main>
