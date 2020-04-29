@@ -1,0 +1,273 @@
+[
+    {
+        "name": "Bear",
+        "team": "S.A.M.",
+        "position": "striker",
+        "current_stats": {
+            "gm": 7,
+            "w": 5,
+            "win_per": 0.714,
+            "PP": 109,
+            "g": 42,
+            "ggm": 5.78,
+            "ga": 0,
+            "gagm": 0,
+            "og": 0
+        },
+        "career_stats": {
+            "gm": 7,
+            "w": 5,
+            "win_per": 0.714,
+            "PP": 109,
+            "g": 42,
+            "ggm": 5.78,
+            "ga": 0,
+            "gagm": 0,
+            "og": 0
+        }
+    },
+    {
+        "name": "Lacy Harrington",
+        "team": "Free Will",
+        "position": "striker",
+        "current_stats": {
+            "gm": 8,
+            "w": 5,
+            "win_per": 0.625,
+            "PP": 133,
+            "g": 48,
+            "ggm": 5.41,
+            "ga": 0,
+            "gagm": 0,
+            "og": 1
+        },
+        "career_stats": {
+            "gm": 8,
+            "w": 5,
+            "win_per": 0.625,
+            "PP": 133,
+            "g": 48,
+            "ggm": 5.41,
+            "ga": 0,
+            "gagm": 0,
+            "og": 1
+        }
+    },
+    {
+        "name": "Woodsy",
+        "team": "Rock of Gibraltar",
+        "position": "striker",
+        "current_stats": {
+            "gm": 8,
+            "w": 4,
+            "win_per": 0.500,
+            "PP": 111,
+            "g": 31,
+            "ggm": 4.19,
+            "ga": 0,
+            "gagm": 0,
+            "og": 0
+        },
+        "career_stats": {
+            "gm": 8,
+            "w": 4,
+            "win_per": 0.500,
+            "PP": 111,
+            "g": 31,
+            "ggm": 4.19,
+            "ga": 0,
+            "gagm": 0,
+            "og": 0
+        }
+    },
+    {
+        "name": "Kevin Dougher",
+        "team": "Fire Breathing Rubber Duckies",
+        "position": "striker",
+        "current_stats": {
+            "gm": 5,
+            "w": 1,
+            "win_per": 0.200,
+            "PP": 72,
+            "g": 21,
+            "ggm": 4.38,
+            "ga": 0,
+            "gagm": 0,
+            "og": 0
+        },
+        "career_stats": {
+            "gm": 5,
+            "w": 1,
+            "win_per": 0.200,
+            "PP": 72,
+            "g": 21,
+            "ggm": 4.38,
+            "ga": 0,
+            "gagm": 0,
+            "og": 0
+        }
+    },
+    
+    {
+        "name": "Earl",
+        "team": "Size Matters",
+        "position": "striker",
+        "current_stats": {
+            "gm": 2,
+            "w": 0,
+            "win_per": 0.000,
+            "PP": 30,
+            "g": 3,
+            "ggm": 1.50,
+            "ga": 0,
+            "gagm": 0.00,
+            "og": 0
+        },
+        "career_stats": {
+            "gm": 2,
+            "w": 0,
+            "win_per": 0.000,
+            "PP": 30,
+            "g": 3,
+            "ggm": 1.50,
+            "ga": 0,
+            "gagm": 0.00,
+            "og": 0
+        }
+    },
+    {
+        "name": "Lep",
+        "team": "S.A.M.",
+        "position": "goalkeeper",
+        "current_stats": {
+            "gm": 7,
+            "w": 5,
+            "win_per": 0.714,
+            "PP": 109,
+            "g": 20,
+            "ggm": 2.75,
+            "ga": 45,
+            "gagm": 6.19,
+            "og": 1
+        },
+        "career_stats": {
+            "gm": 7,
+            "w": 5,
+            "win_per": 0.714,
+            "PP": 109,
+            "g": 20,
+            "ggm": 2.75,
+            "ga": 45,
+            "gagm": 6.19,
+            "og": 1
+        }
+    },
+    {
+        "name": "Marissa Dougher",
+        "team": "Free Will",
+        "position": "goalkeeper",
+        "current_stats": {
+            "gm": 8,
+            "w": 5,
+            "win_per": 0.625,
+            "PP": 133,
+            "g": 22,
+            "ggm": 2.48,
+            "ga": 55,
+            "gagm": 6.20,
+            "og": 2
+        },
+        "career_stats": {
+            "gm": 8,
+            "w": 5,
+            "win_per": 0.625,
+            "PP": 133,
+            "g": 22,
+            "ggm": 2.48,
+            "ga": 55,
+            "gagm": 6.20,
+            "og": 2
+        }
+    },
+    {
+        "name": "Rev",
+        "team": "Rock of Gibraltar",
+        "position": "goalkeeper",
+        "current_stats": {
+            "gm": 8,
+            "w": 4,
+            "win_per": 0.500,
+            "PP": 111,
+            "g": 30,
+            "ggm": 4.05,
+            "ga": 65,
+            "gagm": 8.78,
+            "og": 1
+        },
+        "career_stats": {
+            "gm": 8,
+            "w": 4,
+            "win_per": 0.500,
+            "PP": 111,
+            "g": 30,
+            "ggm": 4.05,
+            "ga": 65,
+            "gagm": 8.78,
+            "og": 1
+        }
+    },
+    {
+        "name": "Katelyn Dougher",
+        "team": "Fire Breathing Rubber Duckies",
+        "position": "goalkeeper",
+        "current_stats": {
+            "gm": 5,
+            "w": 1,
+            "win_per": 0.200,
+            "PP": 72,
+            "g": 3,
+            "ggm": 0.63,
+            "ga": 46,
+            "gagm": 9.58,
+            "og": 0
+        },
+        "career_stats": {
+            "gm": 5,
+            "w": 1,
+            "win_per": 0.200,
+            "PP": 72,
+            "g": 3,
+            "ggm": 0.63,
+            "ga": 46,
+            "gagm": 9.58,
+            "og": 0
+        }
+    },
+    {
+        "name": "Angel Dougher",
+        "team": "Size Matters",
+        "position": "goalkeeper",
+        "current_stats": {
+            "gm": 2,
+            "w": 0,
+            "win_per": 0.000,
+            "PP": 30,
+            "g": 7,
+            "ggm": 3.50,
+            "ga": 20,
+            "gagm": 10.00,
+            "og": 0
+        },
+        "career_stats": {
+            "gm": 2,
+            "w": 0,
+            "win_per": 0.000,
+            "PP": 30,
+            "g": 7,
+            "ggm": 3.50,
+            "ga": 20,
+            "gagm": 10.00,
+            "og": 0
+        }
+    }
+]
