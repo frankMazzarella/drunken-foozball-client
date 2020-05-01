@@ -12,6 +12,8 @@ import {
   CardHeader
 } from '@material-ui/core';
 
+import teams from '../teams.json';
+
 const useStyles = makeStyles(() => ({
   header: {
     textAlign: 'center',
@@ -49,32 +51,11 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-// TODO: no reason for this function
-function createRank(rank, team, points, record) {
-  return { rank, team, points, record };
-}
-
-const ranks = [
-  createRank(1, 'S.A.M.', 1360, '17-3'),
-  createRank(2, 'Rock of Gibraltar', 610, '9-9'),
-  createRank(3, 'Free Will', 570, '8-11'),
-  createRank(4, 'Fire Breathing Rubber Duckies', 180, '2-8'),
-  createRank(5, 'Rev and Kev', 80, '1-3'),
-  createRank(6, 'Rev and Riss', 50, '2-1'),
-  createRank(7, 'Sophomores', 45, '1-2'),
-  createRank(8, 'Blackish Assholes', 10, '0-2'),
-];
-
 export default function Home() {
   const classes = useStyles();
-  const warning = `NOTICE: The S.A.M. team is currently under investigation for cheating
-    and unsportsman like conduct during the 2019 Drunken Foozball Championship.`
 
   return (
-    <Grid container direction="column" alignItems="center">
-      <Card raised>
-        <CardHeader title={warning} />
-      </Card>
+    <Grid container direction="column" width="100%" alignItems="center">
       <TableContainer>
         <Table className={classes.table}>
           <TableHead>
@@ -87,16 +68,16 @@ export default function Home() {
               <TableCell className={classes.rank_header}>Rank</TableCell>
               <TableCell className={classes.rank_header}>Team</TableCell>
               <TableCell className={classes.rank_header}>Points</TableCell>
-              <TableCell className={classes.rank_header}>Record</TableCell>
+              <TableCell className={classes.rank_header} style={{borderRight: '1px solid #00b4f1'}}>Record</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
-            {ranks.map(row => (
-              <TableRow key={row.rank}>
-                <TableCell style={{ borderBottom: "none" }} className={classes.rank}>{row.rank}</TableCell>
-                <TableCell style={{ borderBottom: "none" }} className={classes.team}>{row.team}</TableCell>
-                <TableCell style={{ borderBottom: "none" }} className={classes.rank}>{row.points}</TableCell>
-                <TableCell style={{ borderBottom: "none" }} className={classes.rank}>{row.record}</TableCell>
+            {teams.map((team, index) => (
+              <TableRow key={team.rank}>
+                <TableCell className={classes.rank}>{team.current.rank}</TableCell>
+								<TableCell className={classes.team}>{team.name}</TableCell>
+								<TableCell className={classes.rank}>{team.current.points}</TableCell>
+								<TableCell className={classes.rank} style={{borderRight: '1px solid #00b4f1'}}>{team.current.wins}-{team.current.losses}</TableCell>
               </TableRow>
             ))}
           </TableBody>
