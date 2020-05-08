@@ -1,0 +1,202 @@
+[
+  {
+    "name": "S.A.M.",
+    "members": [
+      "Sam 'Bear' Fumanti",
+      "Sam 'Lep' Fumanti"
+    ],
+    "current": {
+      "rank": 1,
+      "points": 1340,
+      "wins": 17,
+      "losses": 4,
+      "tourn_won": 1
+    },
+    "career": {
+      "rank": 1,
+      "wins": 21,
+      "losses": 4,
+      "tourn_won": 7,
+      "nye_wins": 1,
+      "year_end_1": 1
+    },
+    "h2h": [
+      [
+        "Rock of Gibraltar",
+        "6-0"
+      ],
+      [
+        "Free Will",
+        "5-2"
+      ],
+      [
+        "Fire Breathing Rubber Duckies",
+        "5-0"
+      ],
+      [
+        "Size Matters",
+        "0-0"
+      ]
+    ]
+  },
+  {
+    "name": "Free Will",
+    "members": [
+      "Lacy Harrington",
+      "Marissa Dougher"
+    ],
+    "current": {
+      "rank": 2,
+      "points": 860,
+      "wins": 11,
+      "losses": 10,
+      "tourn_won": 1
+    },
+    "career": {
+      "rank": 2,
+      "wins": 13,
+      "losses": 12,
+      "tourn_won": 2,
+      "nye_wins": 0,
+      "year_end_1": 0
+    },
+    "h2h": [
+      [
+        "S.A.M.",
+        "2-5"
+      ],
+      [
+        "Rock of Gibraltar",
+        "8-5"
+      ],
+      [
+        "Fire Breathing Rubber Duckies",
+        "2-1"
+      ],
+      [
+        "Size Matters",
+        "0-0"
+      ]
+    ]
+  },
+  {
+    "name": "Rock of Gibraltar",
+    "members": [
+      "Frank 'Woodsy' Mazzarella",
+      "Tom 'Rev' Dougher"
+    ],
+    "current": {
+      "rank": 3,
+      "points": 590,
+      "wins": 9,
+      "losses": 10,
+      "tourn_won": 0
+    },
+    "career": {
+      "rank": 2,
+      "wins": 10,
+      "losses": 13,
+      "tourn_won": 0,
+      "nye_wins": 0,
+      "year_end_1": 0
+    },
+    "h2h": [
+      [
+        "S.A.M.",
+        "0-6"
+      ],
+      [
+        "Free Will",
+        "5-8"
+      ],
+      [
+        "Fire Breathing Rubber Duckies",
+        "3-0"
+      ],
+      [
+        "Size Matters",
+        "1-0"
+      ]
+    ]
+  },
+  {
+    "name": "Fire Breathing Rubber Duckies",
+    "members": [
+      "Kevin Dougher",
+      "Katelyn Dougher"
+    ],
+    "current": {
+      "rank": 4,
+      "points": 235,
+      "wins": 3,
+      "losses": 10,
+      "tourn_won": 0
+    },
+    "career": {
+      "rank": 4,
+      "wins": 3,
+      "losses": 10,
+      "tourn_won": 0,
+      "nye_wins": 0,
+      "year_end_1": 0
+    },
+    "h2h": [
+      [
+        "S.A.M.",
+        "0-5"
+      ],
+      [
+        "Rock of Gibraltar",
+        "0-3"
+      ],
+      [
+        "Free Will",
+        "1-2"
+      ],
+      [
+        "Size Matters",
+        "1-0"
+      ]
+    ]
+  },
+  {
+    "name": "Size Matters",
+    "members": [
+      "Earl",
+      "Angel Dougher"
+    ],
+    "current": {
+      "rank": 5,
+      "points": 10,
+      "wins": 0,
+      "losses": 2,
+      "tourn_won": 0
+    },
+    "career": {
+      "rank": 7,
+      "wins": 0,
+      "losses": 2,
+      "tourn_won": 0,
+      "nye_wins": 0,
+      "year_end_1": 0
+    },
+    "h2h": [
+      [
+        "S.A.M.",
+        "0-0"
+      ],
+      [
+        "Rock of Gibraltar",
+        "0-1"
+      ],
+      [
+        "Free Will",
+        "0-0"
+      ],
+      [
+        "Fire Breathing Rubber Duckies",
+        "0-1"
+      ]
+    ]
+  }
+]

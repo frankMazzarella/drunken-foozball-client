@@ -1,6 +1,8 @@
 import React from 'react';
 import { Grid, makeStyles, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@material-ui/core';
-import players from '../players.json';
+
+// TODO: this JSON file many mysterious acronyms that should be spelled out for sanity and consistency
+import players from './players.json';
 
 const useStyles = makeStyles(() => ({
   header: {
@@ -10,7 +12,7 @@ const useStyles = makeStyles(() => ({
     padding: 40,
     backgroundColor: '#00b4f1',
   },
-  position_header: {
+  positionHeader: {
     textAlign: 'center',
     fontFamily: 'Roboto',
     fontSize: 36,
@@ -18,7 +20,7 @@ const useStyles = makeStyles(() => ({
     color: '#00b4f1',
     borderBottom: '1px solid #61978e',
   },
-  stats_header: {
+  statsHeader: {
     color: '#61978e',
     borderBottom: '1px solid #61978e',
     textAlign: 'center',
@@ -33,12 +35,14 @@ const useStyles = makeStyles(() => ({
     padding: 10,
   },
   name: {
+    borderBottom: 'none',
     color: '#00b4f1',
     padding: 5,
     borderRight: '1px solid #61978e',
     textAlign: 'center',
   },
   stats: {
+    borderBottom: 'none',
     padding: 5,
     border: '1px dotted #61978e',
     textAlign: 'center',
@@ -49,36 +53,40 @@ export default function Home() {
   const classes = useStyles();
 
   function addStriker(player) {
-		if(player.position == 'striker')
-			return <TableRow key={player.name}>
-				<TableCell style={{borderBottom: "none"}} className={classes.name}>{player.name}</TableCell>
-				<TableCell style={{borderBottom: "none"}} className={classes.stats}>{player.current_stats.gm}</TableCell>
-				<TableCell style={{borderBottom: "none"}} className={classes.stats}>{player.current_stats.w}</TableCell>
-				<TableCell style={{borderBottom: "none"}} className={classes.stats}>{player.current_stats.win_per}</TableCell>
-				<TableCell style={{borderBottom: "none"}} className={classes.stats}>{player.current_stats.PP}</TableCell>
-				<TableCell style={{borderBottom: "none"}} className={classes.stats}>{player.current_stats.g}</TableCell>
-				<TableCell style={{borderBottom: "none"}} className={classes.stats}>{player.current_stats.ggm}</TableCell>
-				<TableCell style={{borderBottom: "none"}} className={classes.stats}>{player.current_stats.og}</TableCell>
-				</TableRow>;
-		return null;
-		}
+    if (player.position === 'striker') {
+      return (
+        <TableRow key={player.name}>
+          <TableCell className={classes.name}>{player.name}</TableCell>
+          <TableCell className={classes.stats}>{player.currentStats.gm}</TableCell>
+          <TableCell className={classes.stats}>{player.currentStats.w}</TableCell>
+          <TableCell className={classes.stats}>{player.currentStats.winPercentage}</TableCell>
+          <TableCell className={classes.stats}>{player.currentStats.PP}</TableCell>
+          <TableCell className={classes.stats}>{player.currentStats.g}</TableCell>
+          <TableCell className={classes.stats}>{player.currentStats.ggm}</TableCell>
+          <TableCell className={classes.stats}>{player.currentStats.og}</TableCell>
+        </TableRow>
+      );
+    }
+  }
 
   function addGoalkeeper(player) {
-		if(player.position == 'goalkeeper')
-			return <TableRow key={player.name}>
-				<TableCell style={{borderBottom: "none"}} className={classes.name}>{player.name}</TableCell>
-				<TableCell style={{borderBottom: "none"}} className={classes.stats}>{player.current_stats.gm}</TableCell>
-				<TableCell style={{borderBottom: "none"}} className={classes.stats}>{player.current_stats.w}</TableCell>
-				<TableCell style={{borderBottom: "none"}} className={classes.stats}>{player.current_stats.win_per}</TableCell>
-				<TableCell style={{borderBottom: "none"}} className={classes.stats}>{player.current_stats.PP}</TableCell>
-				<TableCell style={{borderBottom: "none"}} className={classes.stats}>{player.current_stats.g}</TableCell>
-				<TableCell style={{borderBottom: "none"}} className={classes.stats}>{player.current_stats.ggm}</TableCell>
-				<TableCell style={{borderBottom: "none"}} className={classes.stats}>{player.current_stats.ga}</TableCell>
-				<TableCell style={{borderBottom: "none"}} className={classes.stats}>{player.current_stats.gagm}</TableCell>
-				<TableCell style={{borderBottom: "none"}} className={classes.stats}>{player.current_stats.og}</TableCell>
-				</TableRow>;
-		return null;
-		}
+    if (player.position === 'goalkeeper') {
+      return (
+        <TableRow key={player.name}>
+          <TableCell className={classes.name}>{player.name}</TableCell>
+          <TableCell className={classes.stats}>{player.currentStats.gm}</TableCell>
+          <TableCell className={classes.stats}>{player.currentStats.w}</TableCell>
+          <TableCell className={classes.stats}>{player.currentStats.winPercentage}</TableCell>
+          <TableCell className={classes.stats}>{player.currentStats.PP}</TableCell>
+          <TableCell className={classes.stats}>{player.currentStats.g}</TableCell>
+          <TableCell className={classes.stats}>{player.currentStats.ggm}</TableCell>
+          <TableCell className={classes.stats}>{player.currentStats.ga}</TableCell>
+          <TableCell className={classes.stats}>{player.currentStats.gagm}</TableCell>
+          <TableCell className={classes.stats}>{player.currentStats.og}</TableCell>
+        </TableRow>
+      );
+    }
+  }
 
   return (
     <Grid container width="100%" direction="column" alignItems="center">
@@ -91,26 +99,28 @@ export default function Home() {
           </TableHead>
           <TableHead>
             <TableRow>
-              <TableCell className={classes.position_header} colSpan={8}>Strikers</TableCell>
+              <TableCell className={classes.positionHeader} colSpan={8}>Strikers</TableCell>
             </TableRow>
           </TableHead>
           <TableHead>
             <TableRow>
-              <TableCell className={classes.stats_header}>Player</TableCell>
-              <TableCell className={classes.stats_header}>Games</TableCell>
-              <TableCell className={classes.stats_header}>Wins</TableCell>
-              <TableCell className={classes.stats_header}>Win %</TableCell>
-              <TableCell className={classes.stats_header}>TiP</TableCell>
-              <TableCell className={classes.stats_header}>Goals</TableCell>
-              <TableCell className={classes.stats_header}>G/Gm</TableCell>
-              <TableCell className={classes.stats_header}>OG</TableCell>
+              <TableCell className={classes.statsHeader}>Player</TableCell>
+              <TableCell className={classes.statsHeader}>Games</TableCell>
+              <TableCell className={classes.statsHeader}>Wins</TableCell>
+              <TableCell className={classes.statsHeader}>Win %</TableCell>
+              <TableCell className={classes.statsHeader}>TiP</TableCell>
+              <TableCell className={classes.statsHeader}>Goals</TableCell>
+              <TableCell className={classes.statsHeader}>G/Gm</TableCell>
+              <TableCell className={classes.statsHeader}>OG</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
-            {players.map((player, index) => (
-              addStriker(player)
-            ))}
-				  </TableBody>
+            {
+              players.map((player) => (
+                addStriker(player)
+              ))
+            }
+          </TableBody>
         </Table>
       </TableContainer>
 
@@ -118,28 +128,30 @@ export default function Home() {
         <Table className={classes.table}>
           <TableHead>
             <TableRow>
-              <TableCell className={classes.position_header} colSpan={10}>Goalkeepers</TableCell>
+              <TableCell className={classes.positionHeader} colSpan={10}>Goalkeepers</TableCell>
             </TableRow>
           </TableHead>
           <TableHead>
             <TableRow>
-              <TableCell className={classes.stats_header}>Player</TableCell>
-              <TableCell className={classes.stats_header}>Games</TableCell>
-              <TableCell className={classes.stats_header}>Wins</TableCell>
-              <TableCell className={classes.stats_header}>Win %</TableCell>
-              <TableCell className={classes.stats_header}>TiP</TableCell>
-              <TableCell className={classes.stats_header}>Goals</TableCell>
-              <TableCell className={classes.stats_header}>G/Gm</TableCell>
-              <TableCell className={classes.stats_header}>OG</TableCell>
-              <TableCell className={classes.stats_header}>GA</TableCell>
-              <TableCell className={classes.stats_header}>GA/Gm</TableCell>
+              <TableCell className={classes.statsHeader}>Player</TableCell>
+              <TableCell className={classes.statsHeader}>Games</TableCell>
+              <TableCell className={classes.statsHeader}>Wins</TableCell>
+              <TableCell className={classes.statsHeader}>Win %</TableCell>
+              <TableCell className={classes.statsHeader}>TiP</TableCell>
+              <TableCell className={classes.statsHeader}>Goals</TableCell>
+              <TableCell className={classes.statsHeader}>G/Gm</TableCell>
+              <TableCell className={classes.statsHeader}>OG</TableCell>
+              <TableCell className={classes.statsHeader}>GA</TableCell>
+              <TableCell className={classes.statsHeader}>GA/Gm</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
-            {players.map((player, index) => (
-              addGoalkeeper(player)
-            ))}
-				  </TableBody>
+            {
+              players.map((player) => (
+                addGoalkeeper(player)
+              ))
+            }
+          </TableBody>
         </Table>
       </TableContainer>
     </Grid>
