@@ -1,0 +1,144 @@
+[
+  {
+    "name": "The Fumanti Award",
+    "race": [
+      {
+        "player": "Lacy Harrington",
+        "team": "Free Will"
+      },
+      {
+        "player": "Lep",
+        "team": "S.A.M."
+      },
+      {
+        "player": "Bear",
+        "team": "S.A.M."
+      }
+    ],
+    "history": [
+      {
+        "year": "2019",
+        "winner": "Lacy Harrington",
+        "team": "Free Will"
+      }
+    ]
+  },
+  {
+    "name": "The Golden Beer",
+    "race": [
+      {
+        "player": "Bear",
+        "team": "S.A.M."
+      },
+      {
+        "player": "Lacy Harrington",
+        "team": "Free Will"
+      },
+      {
+        "player": "Kevin Dougher",
+        "team": "Fire Breathing Rubber Duckies"
+      }
+    ],
+    "history": [
+      {
+        "year": "2019",
+        "winner": "Bear",
+        "team": "S.A.M."
+      }
+    ]
+  },
+  {
+    "name": "The Guardian of the Goalaxy Award",
+    "race": [
+      {
+        "player": "Lep",
+        "team": "S.A.M."
+      },
+      {
+        "player": "Marissa Dougher",
+        "team": "Free Will"
+      },
+      {
+        "player": "Rev",
+        "team": "Rock of Gibraltar"
+      }
+    ],
+    "history": [
+      {
+        "year": "2019",
+        "winner": "Lep",
+        "team": "S.A.M."
+      }
+    ]
+  },
+  {
+    "name": "The THON Award",
+    "race": [
+      {
+        "player": "Lacy Harrington",
+        "team": "Free Will"
+      },
+      {
+        "player": "Marissa Dougher",
+        "team": "Free Will"
+      },
+      {
+        "player": "Kevin Dougher",
+        "team": "Fire Breathing Rubber Duckies"
+      }
+    ],
+    "history": [
+      {
+        "year": "2019",
+        "winner": "Lacy Harrington",
+        "team": "Free Will"
+      }
+    ]
+  },
+  {
+    "name": "The You Don't Suck Anymore Award",
+    "race": [
+      {
+        "player": "Kevin Dougher",
+        "team": "Fire Breathing Rubber Duckies"
+      },
+      {
+        "player": "Katelyn Dougher",
+        "team": "Fire Breathing Rubber Duckies"
+      },
+      {
+        "player": "Marissa Dougher",
+        "team": "Free Will"
+      }
+    ],
+    "history": [
+      {
+        "year": "2019",
+        "winner": "Marissa Dougher",
+        "team": "Free Will"
+      }
+    ]
+  },
+  {
+    "name": "The It Ain't Over Award",
+    "race": [],
+    "history": [
+      {
+        "year": "2019",
+        "winner": "5-9 Turkey Bowl",
+        "team": "S.A.M."
+      }
+    ]
+  },
+  {
+    "name": "The Love at First Sight Award",
+    "race": [],
+    "history": [
+      {
+        "year": "2019",
+        "winner": "Woodsy/Marissa Dougher",
+        "team": ""
+      }
+    ]
+  }
+]
