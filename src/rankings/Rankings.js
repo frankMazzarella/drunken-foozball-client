@@ -56,11 +56,16 @@ export default function Home() {
   const classes = useStyles();
   const warning = `NOTICE: The S.A.M. team is currently under investigation for cheating
     and unsportsman like conduct during the 2019 Drunken Foozball Championship.`
+  const warning2 = `NOTICE: The Rock of Gibraltar team is currently under investigation for cheating
+    and unsportsman like conduct during the 2019 Drunken Foozball Championship, even though they couldn't win.`
 
   return (
     <Grid container direction="column" alignItems="center">
       <Card raised>
         <CardHeader title={warning} />
+      </Card>
+	  <Card raised>
+        <CardHeader title={warning2} />
       </Card>
       <TableContainer>
         <Table className={classes.table}>
