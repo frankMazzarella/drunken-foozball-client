@@ -32,16 +32,19 @@ export default function Home() {
         <br /><br />
       </Grid>
       <Grid item sm={10} lg={10}>
-        <h1 className={classes.header}>Screw the Corona</h1>
+        <h1 className={classes.header}>Bon Voyage, Bitches</h1>
       </Grid>
       <Grid item sm={10} lg={10}>
         <Typography className={classes.story}>
-          The DFL took a rare opportunity to host a tournament amid the coronavirus pandemic recently. Playing
-          outdoors, since the virus is afraid of sunlight, the latest tournament featured the DFL's newest team,
-          Size Matters. Free Will came out a strong, defeating Rock of Gibraltar 10-1 before falling in an epic
-          against S.A.M. 10-9. They'd fight their way back to the championship match, though, and in a stunning
-          upset, they'd win two straight against S.A.M. to claim their first title of 2020. The race to New Year's
-          Eve looks a lot more interesting now.
+          It was an exciting day on the DFL circuit!  With the return of Lacy, the DFL was able to
+          host the long-awaited Le Bon Voyage Tournoi.  The latest contest saw the inclusion of a
+          temporary team in Frankenstien, made up of Woodsy and Kevin.  They gave S.A.M. a scare,
+          but in the end only mustered one win against Size Matters.  Meanwhile, the semifinals showcased
+          one of the top matches of the year, when S.A.M. pulled away with a 10-9 victory over Free Will.
+          The girls quickly dispatched Frankenstein for rematch, though, and pulled out an easy victory,
+          setting up a sudden death match versus S.A.M..  The final match didn't go as well, though,
+          and S.A.M. took the crown on the day with a comfortable 10-6 win.  The DFL now enters playoff
+          season, with the 2020 Turkey Bowl next on the schedule.
         </Typography>
       </Grid>
     </Grid>

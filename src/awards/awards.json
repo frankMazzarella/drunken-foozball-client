@@ -11,8 +11,8 @@
         "team": "S.A.M."
       },
       {
-        "player": "Bear",
-        "team": "S.A.M."
+        "player": "Marissa Dougher",
+        "team": "Free Will"
       }
     ],
     "history": [
@@ -27,16 +27,16 @@
     "name": "The Golden Beer",
     "race": [
       {
-        "player": "Bear",
-        "team": "S.A.M."
-      },
-      {
         "player": "Lacy Harrington",
         "team": "Free Will"
       },
       {
-        "player": "Kevin Dougher",
-        "team": "Fire Breathing Rubber Duckies"
+        "player": "Bear",
+        "team": "S.A.M."
+      },
+      {
+        "player": "Woodsy",
+        "team": "Rock of Gibraltar"
       }
     ],
     "history": [
@@ -51,12 +51,12 @@
     "name": "The Guardian of the Goalaxy Award",
     "race": [
       {
-        "player": "Lep",
-        "team": "S.A.M."
-      },
-      {
         "player": "Marissa Dougher",
         "team": "Free Will"
+      },
+      {
+        "player": "Lep",
+        "team": "S.A.M."
       },
       {
         "player": "Rev",
@@ -72,7 +72,7 @@
     ]
   },
   {
-    "name": "The THON Award",
+    "name": "The Can I See Your ID, Please Award",
     "race": [
       {
         "player": "Lacy Harrington",

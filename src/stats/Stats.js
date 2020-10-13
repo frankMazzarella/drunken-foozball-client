@@ -110,7 +110,7 @@ export default function Home() {
               <TableCell className={classes.statsHeader}>Win %</TableCell>
               <TableCell className={classes.statsHeader}>TiP</TableCell>
               <TableCell className={classes.statsHeader}>Goals</TableCell>
-              <TableCell className={classes.statsHeader}>G/Gm</TableCell>
+              <TableCell className={classes.statsHeader}>aG/Gm</TableCell>
               <TableCell className={classes.statsHeader}>OG</TableCell>
             </TableRow>
           </TableHead>
@@ -139,10 +139,10 @@ export default function Home() {
               <TableCell className={classes.statsHeader}>Win %</TableCell>
               <TableCell className={classes.statsHeader}>TiP</TableCell>
               <TableCell className={classes.statsHeader}>Goals</TableCell>
-              <TableCell className={classes.statsHeader}>G/Gm</TableCell>
+              <TableCell className={classes.statsHeader}>aG/Gm</TableCell>
               <TableCell className={classes.statsHeader}>OG</TableCell>
               <TableCell className={classes.statsHeader}>GA</TableCell>
-              <TableCell className={classes.statsHeader}>GA/Gm</TableCell>
+              <TableCell className={classes.statsHeader}>aGA/Gm</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>

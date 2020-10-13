@@ -9,7 +9,9 @@ import {
   TableHead,
   TableRow,
   Card,
-  CardHeader
+  CardHeader,
+  CardContent,
+  Typography
 } from '@material-ui/core';
 
 // TODO: this JSON file has inconsistent, abbreviated, and nonsensical naming conventions
@@ -56,11 +58,26 @@ export default function Home() {
   const classes = useStyles();
   const warning = `NOTICE: The S.A.M. team is currently under investigation for cheating
     and unsportsman like conduct during the 2019 Drunken Foozball Championship.`
+  const warning2 = `NOTICE: The Rock of Gibraltar team is currently under investigation for cheating
+    and unsportsman like conduct during the 2019 Drunken Foozball Championship, even though they couldn't win.`
 
   return (
     <Grid container direction="column" alignItems="center">
       <Card raised>
         <CardHeader title={warning} />
+      </Card>
+      <Card raised>
+        <CardHeader title={warning2} />
+        <CardContent>
+        <Typography variant="body2" component="p">
+          Hi, Woodsy here. We let Lep submit changes to the website on occasion. Its a really nice thing to let
+          him try to help. He does his best. You can probably tell what pages have been designed by him and which not...
+          Everytime he submits a change to the website he attempts to remove the above banner. This time he seems to
+          have added his own. Its been a rough year, so we're just gonna let him have this one.
+          Thanks everyone for your understanding and I apologise profusely for any confusion/inconvenience.<br />< br />
+          -- Woodsy
+        </Typography>
+        </CardContent>
       </Card>
       <TableContainer>
         <Table className={classes.table}>
