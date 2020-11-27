@@ -3,22 +3,22 @@
     "name": "The Fumanti Award",
     "race": [
       {
-        "player": "Lacy Harrington",
-        "team": "Free Will"
-      },
-      {
         "player": "Lep",
         "team": "S.A.M."
       },
       {
-        "player": "Marissa Dougher",
+        "player": "Lacy",
+        "team": "Free Will"
+      },
+      {
+        "player": "Marissa",
         "team": "Free Will"
       }
     ],
     "history": [
       {
         "year": "2019",
-        "winner": "Lacy Harrington",
+        "winner": "Lacy",
         "team": "Free Will"
       }
     ]
@@ -27,7 +27,7 @@
     "name": "The Golden Beer",
     "race": [
       {
-        "player": "Lacy Harrington",
+        "player": "Lacy",
         "team": "Free Will"
       },
       {
@@ -51,15 +51,15 @@
     "name": "The Guardian of the Goalaxy Award",
     "race": [
       {
-        "player": "Marissa Dougher",
-        "team": "Free Will"
-      },
-      {
         "player": "Lep",
         "team": "S.A.M."
       },
       {
-        "player": "Rev",
+        "player": "Marissa",
+        "team": "Free Will"
+      },
+      {
+        "player": "Woodsy",
         "team": "Rock of Gibraltar"
       }
     ],
@@ -75,22 +75,22 @@
     "name": "The Can I See Your ID, Please Award",
     "race": [
       {
-        "player": "Lacy Harrington",
+        "player": "Lacy",
         "team": "Free Will"
       },
       {
-        "player": "Marissa Dougher",
+        "player": "Marissa",
         "team": "Free Will"
       },
       {
-        "player": "Kevin Dougher",
+        "player": "Kevin",
         "team": "Fire Breathing Rubber Duckies"
       }
     ],
     "history": [
       {
         "year": "2019",
-        "winner": "Lacy Harrington",
+        "winner": "Lacy",
         "team": "Free Will"
       }
     ]
@@ -99,22 +99,22 @@
     "name": "The You Don't Suck Anymore Award",
     "race": [
       {
-        "player": "Kevin Dougher",
+        "player": "Kevin",
         "team": "Fire Breathing Rubber Duckies"
       },
       {
-        "player": "Katelyn Dougher",
+        "player": "Katelyn",
         "team": "Fire Breathing Rubber Duckies"
       },
       {
-        "player": "Marissa Dougher",
+        "player": "Marissa",
         "team": "Free Will"
       }
     ],
     "history": [
       {
         "year": "2019",
-        "winner": "Marissa Dougher",
+        "winner": "Marissa",
         "team": "Free Will"
       }
     ]
