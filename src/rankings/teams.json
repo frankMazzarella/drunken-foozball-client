@@ -2,32 +2,33 @@
   {
     "name": "S.A.M.",
     "members": [
-      "Sam 'Bear' Fumanti",
-      "Sam 'Lep' Fumanti"
+      "Bear",
+      "Lep"
     ],
     "current": {
       "rank": 1,
-      "points": 1480,
-      "wins": 8,
-      "losses": 3,
-      "tourn_won": 2
+      "points": 1580,
+      "season_points": 880,
+      "wins": 11,
+      "losses": 4,
+      "tourn_won": 3
     },
     "career": {
       "rank": 1,
-      "wins": 24,
-      "losses": 5,
-      "tourn_won": 8,
+      "wins": 27,
+      "losses": 6,
+      "tourn_won": 9,
       "nye_wins": 1,
       "year_end_1": 1
     },
     "h2h": [
       [
         "Rock of Gibraltar",
-        "6-0"
+        "7-0"
       ],
       [
         "Free Will",
-        "7-3"
+        "9-4"
       ],
       [
         "Fire Breathing Rubber Duckies",
@@ -42,20 +43,21 @@
   {
     "name": "Free Will",
     "members": [
-      "Lacy Harrington",
-      "Marissa Dougher"
+      "Lacy",
+      "Marissa"
     ],
     "current": {
       "rank": 2,
-      "points": 980,
-      "wins": 8,
-      "losses": 5,
+      "points": 1150,
+      "season_points": 670,
+      "wins": 11,
+      "losses": 7,
       "tourn_won": 1
     },
     "career": {
       "rank": 2,
-      "wins": 16,
-      "losses": 14,
+      "wins": 19,
+      "losses": 16,
       "tourn_won": 2,
       "nye_wins": 0,
       "year_end_1": 0
@@ -63,7 +65,7 @@
     "h2h": [
       [
         "S.A.M.",
-        "3-7"
+        "4-9"
       ],
       [
         "Rock of Gibraltar",
@@ -71,7 +73,7 @@
       ],
       [
         "Fire Breathing Rubber Duckies",
-        "2-1"
+        "4-1"
       ],
       [
         "Size Matters",
@@ -82,20 +84,21 @@
   {
     "name": "Rock of Gibraltar",
     "members": [
-      "Frank 'Woodsy' Mazzarella",
-      "Tom 'Rev' Dougher"
+      "Woodsy",
+      "Rev"
     ],
     "current": {
       "rank": 3,
-      "points": 590,
-      "wins": 9,
-      "losses": 10,
+      "points": 525,
+      "season_points": 275,
+      "wins": 5,
+      "losses": 6,
       "tourn_won": 0
     },
     "career": {
       "rank": 2,
-      "wins": 10,
-      "losses": 13,
+      "wins": 11,
+      "losses": 15,
       "tourn_won": 0,
       "nye_wins": 0,
       "year_end_1": 0
@@ -103,7 +106,7 @@
     "h2h": [
       [
         "S.A.M.",
-        "0-6"
+        "0-7"
       ],
       [
         "Free Will",
@@ -111,31 +114,32 @@
       ],
       [
         "Fire Breathing Rubber Duckies",
-        "3-0"
+        "3-1"
       ],
       [
         "Size Matters",
-        "1-0"
+        "2-0"
       ]
     ]
   },
   {
     "name": "Fire Breathing Rubber Duckies",
     "members": [
-      "Kevin Dougher",
-      "Katelyn Dougher"
+      "Kevin",
+      "Katelyn"
     ],
     "current": {
       "rank": 4,
-      "points": 235,
+      "points": 265,
+      "season_points": 165,
       "wins": 3,
-      "losses": 10,
+      "losses": 6,
       "tourn_won": 0
     },
     "career": {
       "rank": 4,
-      "wins": 3,
-      "losses": 10,
+      "wins": 5,
+      "losses": 12,
       "tourn_won": 0,
       "nye_wins": 0,
       "year_end_1": 0
@@ -147,15 +151,15 @@
       ],
       [
         "Rock of Gibraltar",
-        "0-3"
+        "1-3"
       ],
       [
         "Free Will",
-        "1-2"
+        "1-4"
       ],
       [
         "Size Matters",
-        "1-0"
+        "2-0"
       ]
     ]
   },
@@ -163,19 +167,19 @@
     "name": "Size Matters",
     "members": [
       "Earl",
-      "Angel Dougher"
+      "Angel"
     ],
     "current": {
       "rank": 5,
-      "points": 20,
+      "points": 30,
       "wins": 0,
-      "losses": 4,
+      "losses": 6,
       "tourn_won": 0
     },
     "career": {
       "rank": 5,
       "wins": 0,
-      "losses": 4,
+      "losses": 6,
       "tourn_won": 0,
       "nye_wins": 0,
       "year_end_1": 0
@@ -187,7 +191,7 @@
       ],
       [
         "Rock of Gibraltar",
-        "0-1"
+        "0-2"
       ],
       [
         "Free Will",
@@ -195,7 +199,7 @@
       ],
       [
         "Fire Breathing Rubber Duckies",
-        "0-1"
+        "0-2"
       ]
     ]
   }

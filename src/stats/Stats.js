@@ -140,9 +140,9 @@ export default function Home() {
               <TableCell className={classes.statsHeader}>TiP</TableCell>
               <TableCell className={classes.statsHeader}>Goals</TableCell>
               <TableCell className={classes.statsHeader}>aG/Gm</TableCell>
-              <TableCell className={classes.statsHeader}>OG</TableCell>
               <TableCell className={classes.statsHeader}>GA</TableCell>
               <TableCell className={classes.statsHeader}>aGA/Gm</TableCell>
+              <TableCell className={classes.statsHeader}>OG</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
