@@ -1,0 +1,299 @@
+[
+  {
+    "name": "Lacy",
+    "team": "Free Will",
+    "position": "striker",
+    "currentStats": {
+      "gm": 22,
+      "w": 13,
+      "winPercentage": 0.591,
+      "PP": 334,
+      "g": 120,
+      "ggm": 5.39,
+      "ga": 0,
+      "gagm": 0,
+      "og": 1
+    },
+    "careerStats": {
+      "gm": 22,
+      "w": 13,
+      "winPercentage": 0.591,
+      "PP": 334,
+      "g": 120,
+      "ggm": 5.39,
+      "ga": 0,
+      "gagm": 0,
+      "og": 1
+    }
+  },
+  {
+    "name": "Bear",
+    "team": "S.A.M.",
+    "position": "striker",
+    "currentStats": {
+      "gm": 18,
+      "w": 14,
+      "winPercentage": 0.778,
+      "PP": 284,
+      "g": 101,
+      "ggm": 5.33,
+      "ga": 0,
+      "gagm": 0,
+      "og": 0
+    },
+    "careerStats": {
+      "gm": 18,
+      "w": 14,
+      "winPercentage": 0.778,
+      "PP": 284,
+      "g": 101,
+      "ggm": 5.33,
+      "ga": 0,
+      "gagm": 0,
+      "og": 0
+    }
+  },
+  {
+    "name": "Woodsy",
+    "team": "Rock of Gibraltar",
+    "position": "striker",
+    "currentStats": {
+      "gm": 17,
+      "w": 7,
+      "winPercentage": 0.412,
+      "PP": 251,
+      "g": 73,
+      "ggm": 4.36,
+      "ga": 0,
+      "gagm": 0,
+      "og": 0
+    },
+    "careerStats": {
+      "gm": 17,
+      "w": 7,
+      "winPercentage": 0.412,
+      "PP": 251,
+      "g": 73,
+      "ggm": 4.36,
+      "ga": 0,
+      "gagm": 0,
+      "og": 0
+    }
+  },
+  {
+    "name": "Kevin",
+    "team": "Fire Breathing Rubber Duckies",
+    "position": "striker",
+    "currentStats": {
+      "gm": 14,
+      "w": 4,
+      "winPercentage": 0.286,
+      "PP": 192,
+      "g": 50,
+      "ggm": 3.91,
+      "ga": 0,
+      "gagm": 0,
+      "og": 1
+    },
+    "careerStats": {
+      "gm": 14,
+      "w": 4,
+      "winPercentage": 0.286,
+      "PP": 192,
+      "g": 50,
+      "ggm": 3.91,
+      "ga": 0,
+      "gagm": 0,
+      "og": 1
+    }
+  },
+  {
+    "name": "Angel",
+    "team": "Size Matters",
+    "position": "striker",
+    "currentStats": {
+      "gm": 6,
+      "w": 0,
+      "winPercentage": 0.000,
+      "PP": 83,
+      "g": 17,
+      "ggm": 3.07,
+      "ga": 0,
+      "gagm": 0.00,
+      "og": 0
+    },
+    "careerStats": {
+      "gm": 6,
+      "w": 0,
+      "winPercentage": 0.000,
+      "PP": 83,
+      "g": 17,
+      "ggm": 3.07,
+      "ga": 0,
+      "gagm": 0.00,
+      "og": 0
+    }
+  },
+  {
+    "name": "Lep",
+    "team": "S.A.M.",
+    "position": "goalkeeper",
+    "currentStats": {
+      "gm": 18,
+      "w": 14,
+      "winPercentage": 0.778,
+      "PP": 284,
+      "g": 56,
+      "ggm": 2.96,
+      "ga": 120,
+      "gagm": 6.34,
+      "og": 2
+    },
+    "careerStats": {
+      "gm": 18,
+      "w": 14,
+      "winPercentage": 0.778,
+      "PP": 284,
+      "g": 56,
+      "ggm": 2.96,
+      "ga": 120,
+      "gagm": 6.34,
+      "og": 2
+    }
+  },
+  {
+    "name": "Marissa",
+    "team": "Free Will",
+    "position": "goalkeeper",
+    "currentStats": {
+      "gm": 22,
+      "w": 13,
+      "winPercentage": 0.591,
+      "PP": 334,
+      "g": 50,
+      "ggm": 2.25,
+      "ga": 147,
+      "gagm": 6.60,
+      "og": 9
+    },
+    "careerStats": {
+      "gm": 22,
+      "w": 13,
+      "winPercentage": 0.591,
+      "PP": 334,
+      "g": 50,
+      "ggm": 2.25,
+      "ga": 147,
+      "gagm": 6.60,
+      "og": 9
+    }
+  },
+  {
+    "name": "Rev",
+    "team": "Rock of Gibraltar",
+    "position": "goalkeeper",
+    "currentStats": {
+      "gm": 11,
+      "w": 5,
+      "winPercentage": 0.455,
+      "PP": 162,
+      "g": 35,
+      "ggm": 3.24,
+      "ga": 92,
+      "gagm": 8.52,
+      "og": 2
+    },
+    "careerStats": {
+      "gm": 11,
+      "w": 5,
+      "winPercentage": 0.455,
+      "PP": 162,
+      "g": 35,
+      "ggm": 3.24,
+      "ga": 92,
+      "gagm": 8.52,
+      "og": 2
+    }
+  },
+  {
+    "name": "Woodsy",
+    "team": "Rock of Gibraltar",
+    "position": "goalkeeper",
+    "currentStats": {
+      "gm": 3,
+      "w": 1,
+      "winPercentage": 0.333,
+      "PP": 46,
+      "g": 6,
+      "ggm": 1.96,
+      "ga": 26,
+      "gagm": 8.48,
+      "og": 0
+    },
+    "careerStats": {
+      "gm": 3,
+      "w": 1,
+      "winPercentage": 0.333,
+      "PP": 46,
+      "g": 6,
+      "ggm": 1.96,
+      "ga": 26,
+      "gagm": 8.48,
+      "og": 0
+    }
+  },
+  {
+    "name": "Katelyn",
+    "team": "Fire Breathing Rubber Duckies",
+    "position": "goalkeeper",
+    "currentStats": {
+      "gm": 11,
+      "w": 3,
+      "winPercentage": 0.273,
+      "PP": 149,
+      "g": 9,
+      "ggm": 0.91,
+      "ga": 94,
+      "gagm": 9.46,
+      "og": 0
+    },
+    "careerStats": {
+      "gm": 11,
+      "w": 3,
+      "winPercentage": 0.273,
+      "PP": 149,
+      "g": 9,
+      "ggm": 0.91,
+      "ga": 94,
+      "gagm": 9.46,
+      "og": 0
+    }
+  },
+  {
+    "name": "Earl",
+    "team": "Size Matters",
+    "position": "goalkeeper",
+    "currentStats": {
+      "gm": 6,
+      "w": 0,
+      "winPercentage": 0.000,
+      "PP": 83,
+      "g": 5,
+      "ggm": 0.90,
+      "ga": 60,
+      "gagm": 10.84,
+      "og": 6
+    },
+    "careerStats": {
+      "gm": 6,
+      "w": 0,
+      "winPercentage": 0.000,
+      "PP": 83,
+      "g": 5,
+      "ggm": 0.90,
+      "ga": 60,
+      "gagm": 10.84,
+      "og": 6
+    }
+  }
+]
