@@ -1,5 +1,200 @@
 [
   {
+    "name": "New Year's Eve Open",
+    "level": "DFL Cup",
+    "date": "December 31, 2020",
+    "location": "The Dougher Residence",
+    "results": [
+      {
+        "finish": "Winner",
+        "team": "Free Will",
+        "points": 300
+      },
+      {
+        "finish": "Finalist",
+        "team": "S.A.M.",
+        "points": 180
+      },
+      {
+        "finish": "Semi Finalist",
+        "team": "Fire Breathing Rubber Duckies",
+        "points": 100
+      },
+      {
+        "finish": "Preliminary",
+        "team": "Rock of Gibraltar",
+        "points": 55
+      },
+      {
+        "finish": "Preliminary",
+        "team": "Step-bro, What Are You Doing",
+        "points": 10
+      }
+    ],
+    "rounds": [
+      {
+        "name": "Championship Leg 1",
+        "games": [
+          {
+            "winner": "Free Will",
+            "loser": "S.A.M.",
+            "score": "10-7"
+          }
+        ]
+      },
+      {
+        "name": "Loser's Bracket Final",
+        "games": [
+          {
+            "winner": "S.A.M.",
+            "loser": "Fire Breathing Rubber Duckies",
+            "score": "10-6"
+          }
+        ]
+      },
+      {
+        "name": "Loser's Bracket Round 2",
+        "games": [
+          {
+            "winner": "Fire Breathing Rubber Duckies",
+            "loser": "Rock of Gibraltar",
+            "score": "10-4"
+          }
+        ]
+      },
+      {
+        "name": "Main Bracket Final",
+        "games": [
+          {
+            "winner": "Free Will",
+            "loser": "S.A.M.",
+            "score": "10-3"
+          }
+        ]
+      },
+      {
+        "name": "Loser's Bracket Round 1",
+        "games": [
+          {
+            "winner": "Rock of Gibraltar",
+            "loser": "Step-bro, What Are You Doing",
+            "score": "10-4"
+          }
+        ]
+      },
+      {
+        "name": "Main Bracket Round 2",
+        "games": [
+          {
+            "winner": "S.A.M.",
+            "loser": "Fire Breathing Rubber Duckies",
+            "score": "10-0"
+          },
+          {
+            "winner": "Free Will",
+            "loser": "Rock of Gibraltar",
+            "score": "10-4"
+          }
+        ]
+      },
+      {
+        "name": "Main Bracket Round 1",
+        "games": [
+          {
+            "winner": "Fire Breathing Rubber Duckies",
+            "loser": "Step-bro, What Are You Doing",
+            "score": "10-2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Christmas Eve Clash",
+    "level": "DFL Cup",
+    "date": "December 24, 2020",
+    "location": "The Dougher Basement",
+    "results": [
+      {
+        "finish": "Winner",
+        "team": "S.A.M.",
+        "points": 200
+      },
+      {
+        "finish": "Finalist",
+        "team": "Free Will",
+        "points": 120
+      },
+      {
+        "finish": "Semi Finalist",
+        "team": "Rock of Gibraltar",
+        "points": 70
+      },
+      {
+        "finish": "Preliminary",
+        "team": "Fire Breathing Rubber Duckies",
+        "points": 10
+      }
+    ],
+    "rounds": [
+      {
+        "name": "Championship Leg 1",
+        "games": [
+          {
+            "winner": "S.A.M.",
+            "loser": "Free Will",
+            "score": "10-6"
+          }
+        ]
+      },
+      {
+        "name": "Loser's Bracket Final",
+        "games": [
+          {
+            "winner": "Free Will",
+            "loser": "Rock of Gibraltar",
+            "score": "10-5"
+          }
+        ]
+      },
+      {
+        "name": "Main Bracket Final",
+        "games": [
+          {
+            "winner": "S.A.M.",
+            "loser": "Rock of Gibraltar",
+            "score": "10-9"
+          }
+        ]
+      },
+      {
+        "name": "Loser's Bracket Round 1",
+        "games": [
+          {
+            "winner": "Free Will",
+            "loser": "Fire Breathing Rubber Duckies",
+            "score": "10-1"
+          }
+        ]
+      },
+      {
+        "name": "Main Bracket Round 1",
+        "games": [
+          {
+            "winner": "S.A.M.",
+            "loser": "Fire Breathing Rubber Duckies",
+            "score": "10-1"
+          },
+          {
+            "winner": "Rock of Gibraltar",
+            "loser": "Free Will",
+            "score": "10-7"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "Turkey Bowl",
     "level": "DFL Cup",
     "date": "November 26, 2020",
