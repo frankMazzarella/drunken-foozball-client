@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { CardHeader, Card, CardContent, Grid, makeStyles } from '@material-ui/core';
 
-import rules from './rules.json';
 import RuleChapter from './RuleChapter';
 import TableOfContents from './TableOfContents';
 import FirebaseService from '../services/Firebase.serivce';
@@ -15,11 +14,14 @@ const useStyles = makeStyles(() => ({
 export default function Rules() {
   const classes = useStyles();
   const header = `Drunken Foozball League Official Rules and Interpretations ${new Date().getFullYear()}`;
+  const [rules, setRules] = useState([]);
 
-  const rulesRef = FirebaseService.getDatabaseRef('rules');
-  rulesRef.on('value', snap => {
-    console.log(JSON.parse(atob(snap.val())));
-  });
+  useEffect(() => {
+    const rulesRef = FirebaseService.getDatabaseRef('rules');
+    rulesRef.on('value', snap => {
+      setRules(JSON.parse(atob(snap.val())));
+    });
+  }, [])
 
   return (
     <Grid container direction="column" alignItems="center">
@@ -30,7 +32,7 @@ export default function Rules() {
         <Card className={classes.root}>
           <CardHeader title={'Table of Contents'} />
           <CardContent>
-            <TableOfContents />
+            <TableOfContents rules={rules} />
           </CardContent>
         </Card>
         {
