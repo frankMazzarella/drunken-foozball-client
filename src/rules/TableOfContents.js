@@ -20,7 +20,9 @@ export default class TableOfContents extends Component {
       const sectionNumber = `${chapterNumber}.${index + 1}`
       return (
         <Typography key={index} variant="body2">
-          <Link to={sectionNumber} duration={1000} offset={-65} smooth>{`${sectionNumber}. ${section.sectionTitle}`}</Link>
+          <Link to={sectionNumber} duration={1000} offset={-65} smooth>
+            <span style={{cursor: 'pointer'}}>{`${sectionNumber}. ${section.sectionTitle}`}</span>
+          </Link>
         </Typography>
       )
     })

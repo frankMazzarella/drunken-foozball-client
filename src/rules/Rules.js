@@ -15,11 +15,13 @@ export default function Rules() {
   const classes = useStyles();
   const header = `Drunken Foozball League Official Rules and Interpretations ${new Date().getFullYear()}`;
   const [rules, setRules] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const rulesRef = FirebaseService.getDatabaseRef('rules');
     rulesRef.on('value', snap => {
       setRules(JSON.parse(atob(snap.val())));
+      setIsLoading(false);
     });
   }, [])
 
@@ -30,7 +32,7 @@ export default function Rules() {
           <CardHeader title={header} />
         </Card>
         <Card className={classes.root}>
-          <CardHeader title={'Table of Contents'} />
+          <CardHeader title={isLoading ? 'Rules are loading...' : 'Table of Contents'} />
           <CardContent>
             <TableOfContents rules={rules} />
           </CardContent>
