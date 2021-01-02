@@ -1,345 +1,103 @@
 [
   {
-    "chapterTitle": "DFL Circuit Regulations",
+    "chapterTitle": "Introduction",
     "sections": [
       {
-        "sectionTitle": "Categories of Tournaments",
+        "sectionTitle": "Introduction",
+        "description": "All Players and organizers must follow this rulebook.",
         "subSections": [
-          "In official professional drunken foozball, tournament levels are determined by the number of participating teams.  All officially sanctioned drunken foozball tournaments are governed by the DFL Committee."
-        ]
-      },
-      {
-        "sectionTitle": "Tournament Day",
-        "subSections": [
-          "Each DFL tournament is assigned a specific day on the calendar to be scheduled.  These days are subject to change at the discretion of the DFL Committee.",
-          "All matches, including finals shall be played to ten (10) points.",
-          "No tournament shall extend into a second day without approval from the DFL Committee."
-        ]
-      },
-      {
-        "sectionTitle": "Change of Tournament Site",
-        "subSections": [
-          "There shall be no change of a tournament site unless approved by the DFL Committee. A request to change a tournament site must be submitted by the original hosting household via text and affirmed via text by the new hosting household."
-        ]
-      },
-      {
-        "sectionTitle": "Commitment to Rule",
-        "subSections": [
-          "All DFL Tour tournaments are subject to the jurisdiction of the DFL Committee and shall comply with, be bound by and conduct the tournament in accordance with DFL rules and regulations."
-        ]
-      },
-      {
-        "sectionTitle": "Commitment and Membership Obligations",
-        "subSections": [
-          "Player Entry and Commitment to Rules - Any player who is included in the DFL Rankings and/or commits to enter or participates in any DFL Tour tournament consents and agrees to comply with and be bound by all of the provisions of the DFL Official Rulebook and DFL By-Laws (the “DFL Rules”), including, but not limited to, all amendments to DFL Rules.",
-          "Commitment Player - A DFL commitment player is any player who has played in at least two tournaments in the previous 365 days."
+          "The rulebook is the final source for any decisions, overruling all designated Officials. Talk to it. Explain your issue to it. If the rulebook does not respond immediately, you are not drunk enough, so drink.",
+          "The rules of the game of drunken foozball are conceived as much to facilitate drunkenness as to actually play a game.",
+          "The objective is to make this shit legit.",
+          "The aim of the rules is also to bring the game to a level of mutual agreement amongst the Players while seeming to accomplish nothing.",
+          "We remind the reader that while the rulebook is written by drunk people and can be changed on a whim, um, uh...I don’t know where I’m going with this so just drink."
         ]
       }
     ]
   },
   {
-    "chapterTitle": "Branding",
+    "chapterTitle": "Materials and Hardware",
     "sections": [
       {
-        "sectionTitle": "Identificatin - DFL Tour Tournaments",
+        "sectionTitle": "Table",
         "subSections": [
-          "Each DFL Tournament shall identify itself with a name not yet used in that calendar year.  The tournament organizers shall cooperate with the DFL committee to ensure all potential competitors are aware of the tournament and its participation in the DFL Tour.",
-          "Each DFL Tour tournament shall comply with the terms and conditions for the use of the DFL Tour trademark and logo.",
-          "Any officially licensed DFL Tour tournament may display the official DFL logo, as long as it adheres to the following rules: The logo must be displayed above the height of the foozball table. The logo must be displayed in its proper, upright orientation at all times. The logo must not be allowed to touch the ground. The logo must not be allowed to be desecrated by any person, whether or not they are a DFL member.",
-          "Punishments for violating the above rules are determined by the DFL Committee and include, but are not limited to, death."
-        ]
-      }
-    ]
-  },
-  {
-    "chapterTitle": "Financial",
-    "sections": [
-      {
-        "sectionTitle": "Composition of Commitment",
-        "subSections": [
-          "Each tournament’s financial commitment is composed of $0.00."
-        ]
-      },
-      {
-        "sectionTitle": "Currency",
-        "subSections": [
-          "All references to money are expressed in United States Dollars (USD)."
-        ]
-      },
-      {
-        "sectionTitle": "Default of Prize Money Payments",
-        "subSections": [
-          "Any DFL Tour tournament that defaults in payment of prize money may have its membership status revoked at the discretion of the DFL Committee."
-        ]
-      },
-      {
-        "sectionTitle": "Prize Money",
-        "subSections": [
-          "All prize money payments are capped at $0.00 USD."
-        ]
-      }
-    ]
-  },
-  {
-    "chapterTitle": "DFL Playoffs",
-    "sections": [
-      {
-        "sectionTitle": "Tournament Structure",
-        "subSections": [
-          "The three DFL tournaments that make up the DFL Playoffs are the Turkey Bowl, Christmas Eve Clash, and New Year’s Eve Open.",
-          "The tournament shall be a double elimination format.  A bracket shall be constructed no later than five minutes before tournament start and shall include all eligible teams that announced intent to compete in the tournament.",
-          "Any withdrawal, before the official pre-tournament anthem, shall result in a new bracket containing only the remaining teams.  Any withdrawal after the first game is played will result in a forfeit by that team and an automatic advancement to the next round for the next opponent.",
-          "If the number of teams is not a power of two, a number of the highest ranked teams in the most recent DFL Rankings release will receive a bye in the opening round.  All remaining teams will be matched up with highest seed playing lowest seed and so forth. The games will be positioned in the bracket to allow the highest ranked teams that received a bye the opportunity to play the lowest ranked winner of round one. Any team that suffers their first loss is moved to their appropriate slot in the Loser’s Bracket.  Any subsequent loss will result in their being knocked out of the tournament. The winners of the Winner’s and Loser’s Bracket will compete in the tournament championship, with a second leg being played if the Loser’s Bracket champion wins the first leg."
-        ]
-      },
-      {
-        "sectionTitle": "DFL Playoff Championship",
-        "subSections": [
-          "The New Year’s Eve Open is officially designated the championship tournament of the DFL Tour.",
-          "The winning team of the New Year’s Eve Open will receive the two DFL Trophies to keep in their possession until the next New Year’s Eve Open.",
-          "The winning team is required to drink out of the DFL Trophies (The drink must be alcoholic if the winner is of age).",
-          "The members of the winning team will receive Championship Rings upon the completion of their design."
-        ]
-      }
-    ]
-  },
-  {
-    "chapterTitle": "Personnel",
-    "sections": [
-      {
-        "sectionTitle": "Self-Appointed DFL Commisioner",
-        "subSections": [
-          "Appointment - The Self-Appointed DFL Commissioner is self-appointed.",
-          "Responsibilities - Act in cooperation with the DFL Committee. Accuse as many members as possible of cheating. Seemingly accomplish nothing."
-        ]
-      },
-      {
-        "sectionTitle": "Media Director",
-        "subSections": [
-          "Appointment - The Media Director is granted to whoever does most of the media work.",
-          "Responsibilities - Send out tournament announcement messages. Create tournament summaries to be posted on the DFL website. Keep all statistics and rankings up to date. Organize the release of DFL promotional material."
-        ]
-      },
-      {
-        "sectionTitle": "Code Monkey",
-        "subSections": [
-          "Appointment - The Code Monkey is granted to whoever has a degree in being a code monkey.",
-          "Responsibilities - Create and maintain the DFL website. Complain about others not being good at website coding. Eat bananas."
-        ]
-      },
-      {
-        "sectionTitle": "Crotchety Old Man",
-        "subSections": [
-          "Appointment - The Crotchet Old Man is presented to the remaining DFL Committee member who does not already have a role.",
-          "Responsibilities - Be crotchety. Be old."
-        ]
-      }
-    ]
-  },
-  {
-    "chapterTitle": "Facilities & On-Site Conditions",
-    "sections": [
-      {
-        "sectionTitle": "Tables",
-        "subSections": [
-          "An official table must be present in an official DFL sanctioned house.  Current sanctioned DFL houses are as follows: a. The Dougher Residence of Eynon. b.  The Harrington Residence of Throop.",
-          "Sanctioned houses must provide level equipment.  Level can be checked by any official leveling device, or smartphone, or just ‘eye’ it.",
-          "This section is to officially commend Frank for fixing his rods.",
-          "No changes can be made that would affect the interior playing characteristics of the table by any player.",
-          "A player cannot wipe sweat, spit, or any foreign substance on his hand before wiping ball marks off the table."
+          "The Official tables are whatever is in an official DFL sanctioned house. Current sanctioned DFL houses are as follows: 1. The Dougher Residence of Eynon. 2. The Harrington Residence of Throop.",
+          "Sanctioned houses must provide level equipment. Level can be checked by any official leveling device, or smartphone, or like if you put the ball in the middle of the table, does it roll? Like just a little? You sure?"
         ]
       },
       {
         "sectionTitle": "Balls",
         "subSections": [
-          "The official balls to be used in a tournament are to be chosen at the beginning of the tournament and may not be changed throughout the tournament, unless lost.",
-          "Balls. Hehe."
+          "The Official balls are chosen at the beginning of each match and voted on by all participating players."
         ]
       },
       {
         "sectionTitle": "Handles",
         "subSections": [
-          "Handles must be securely attached to the rods.  If a handle slips off, the organizer of the sanctioned house must drink.",
-          "A player may not place anything on the rods or handles."
-        ]
-      },
-      {
-        "sectionTitle": "Whiteboard",
-        "subSections": [
-          "A whiteboard will be provided by the tournament organizer, in order to track the progress of the tournament.",
-          "If the tournament organizer fails to provide a whiteboard, they must drink."
-        ]
-      },
-      {
-        "sectionTitle": "Restrooms",
-        "subSections": [
-          "All players participating in the tournament must have reasonable access to a bathroom within 50 feet of the foozball table."
-        ]
-      },
-      {
-        "sectionTitle": "Drink Supply",
-        "subSections": [
-          "The hosting house must supply a reasonable amount of alcohol to conduct a tournament.",
-          "A portion of alcohol for each player must be kept stored in a cold environment within 50 feet of the foozball table."
+          "Handles must be securely attached to the bars. If a handle slips off, the organizer of the sanctioned house must drink."
         ]
       },
       {
         "sectionTitle": "Other Accessories",
         "subSections": [
-          "All other accessories are authorized unless they are perceived to endanger the player or other participants.",
+          "All other accessories are authorized unless they are perceived to endanger the Player or other participants.",
           "Under no circumstances may the surface or sides of the table be modified by the accessories."
         ]
-      },
-      {
-        "sectionTitle": "First Aid",
-        "subSections": [
-          "Suck it up."
-        ]
       }
     ]
   },
   {
-    "chapterTitle": "The Competition",
+    "chapterTitle": "Rules",
     "sections": [
       {
-        "sectionTitle": "Entries",
+        "sectionTitle": "Code of Ethics",
+        "description": "Any action of an unsportsmanlike or unethical nature (i.e. whining like a little bitch) during tournament play, in the tournament room, or on the grounds of the host facility, will be considered a violation of the Code of Ethics. Mutual respect between all players, officials and/or spectators is a requirement. It shall be the aim of every player and official to represent drunken foozball in the most positive and sportsmanlike manner possible. The standards of sportsmanship are reasonably expected to drop as participants become more intoxicated.",
         "subSections": [
-          "Any person who has participated in at least two DFL Tour tournaments within the last 365 days is deemed immediately eligible to play in a DFL Tour tournament.",
-          "Any other person can be deemed eligible at the discretion of the DFL Committee.",
-          "Any participating player under the age of 21 is not required to drink alcohol (wink, wink)."
-        ]
-      },
-      {
-        "sectionTitle": "Transgender Athlete Participation",
-        "subSections": [
-          "I don’t know, the ATP had this section, so here we go."
-        ]
-      },
-      {
-        "sectionTitle": "Late Withdrawal",
-        "subSections": [
-          "Any team that withdraws from a tournament after the first match has started must drink as penalty.",
-          "The team’s participation in the next DFL Tour tournament is at the discretion of the DFL Committee."
-        ]
-      },
-      {
-        "sectionTitle": "Blind Draw Tournaments",
-        "subSections": [
-          "A blind draw will commence with all players being sorted into two pools.  The first pool will consist of the top half players based on the statistic corresponding to their position (G/Gm for Strikers and GA/Gm for Goalkeepers).  The second pool will consist of the bottom half of players and all first-time players.",
-          "The players in the first pool will randomly draw partners from the second pool."
-        ]
-      },
-      {
-        "sectionTitle": "Tournament Structure",
-        "subSections": [
-          "The tournament shall be a double elimination format.  A bracket shall be constructed no later than five minutes before tournament start and shall include all eligible teams that announced intent to compete in the tournament.",
-          "The players in the first pool will randomly draw partners from the second pool.",
-          "Any withdrawal, before the official pre-tournament anthem, shall result in a new bracket containing only the remaining teams.  Any withdrawal after the first game is played will result in a forfeit by that team and an automatic advancement to the next round for the next opponent.",
-          "If the number of teams is not a power of two, a number of the highest ranked teams in the most recent DFL Rankings release will receive a bye in the opening round.  All remaining teams will be matched up with highest seed playing lowest seed and so forth. The games will be positioned in the bracket to allow the highest ranked teams that received a bye the opportunity to play the lowest ranked winner of round one. Any team that suffers their first loss is moved to their appropriate slot in the Loser’s Bracket.  Any subsequent loss will result in their being knocked out of the tournament. The winners of the Winner’s and Loser’s Bracket will compete in the tournament championship, with a second leg being played if the Loser’s Bracket champion wins the first leg."
-        ]
-      },
-      {
-        "sectionTitle": "Match Scheduling",
-        "subSections": [
-          "Once a draw has been created, the highest seed in the first round has the right to the first match.  If they decline, the choice goes to the next highest seed.",
-          "Each subsequent round will be played once all teams have advanced, alternating between loser’s and winner’s bracket.",
-          "Each round, the highest seeded team remaining has the right to the first match.  If they decline, the choice goes to the next highest seed."
-        ]
-      },
-      {
-        "sectionTitle": "On-Site Procedures",
-        "subSections": [
-          "All tournaments must begin with the official DFL Anthem ('My Ding-a-ling') unless we forget.",
-          "A game is started by the lower seeded team inbounding the ball for the first point.",
-          "Appeal of Calls - Social!!!!",
-          "Overrule - No you’re overruled!",
-          "At any time during a dead ball situation, any member of the tournament may call a social by yelling ‘SOCIAL!’",
-          "All participants in the tournament must drink a reasonable amount of an alcoholic beverage.",
-          "If a participant is underage, they may skip socials (wink wink).  No really, kids.  Skip the socials.",
-          "A player who fails to participate in a social will have to drink more.",
-          "SOCIALLLLLL!!!!!",
-          "Serve and Ready Protocol - A serve is defined as putting the ball into play at the five-man rod at the beginning of a game, after a point is scored or if the ball is awarded to a player following a rules infraction. The ready protocol will be used whenever putting the ball into play.",
-          "Each team is allowed two timeouts per game during which the players may leave the table.  Such time outs shall not exceed 1 minute.",
-          "If a timeout is called in order to allow a player to relieve him or herself, the player has 1 minute from the last drop to return to the table.",
-          "Either team may take the full minute, even if the team that called the timeout does not wish to take the full allotment.",
-          "In any doubles event, either team may switch positions during a timeout.",
-          "A player who removes both hands from the handles and turns completely away from the table while the ball is in play shall be deemed to have requested a timeout once the point is completed.",
-          "Any player may declare they are out of alcohol to request a beer run.  This does not count as a time out.",
-          "A member not involved in the current match may be asked to retrieve an alcoholic beverage.  If they refuse, they’re a little bitch.",
-          "A player may be excused from only 1 social if they’re alcoholic beverage is empty."
-        ]
-      },
-      {
-        "sectionTitle": "Scoring of a Match",
-        "subSections": [
-          "Any ball that enters and stays in the goal results in one point for the other team.",
-          "If a ball enters the goal, but bounces back onto the playing surface without being interfered with is not considered a goal and the point shall continue.",
-          "A team wins when they reach 10 points scored."
-        ]
-      }
-    ]
-  },
-  {
-    "chapterTitle": "DFL Rankings",
-    "sections": [
-      {
-        "sectionTitle": "Eligibility",
-        "subSections": [
-          "Any team that participates in two DFL Tour tournaments in a 365 day period is considered eligible for the DFL Rankings."
-        ]
-      },
-      {
-        "sectionTitle": "Points",
-        "subSections": [
-          "Points shall be allocated based on the size of a tournament.",
-          "Points are assigned based on the round a team loses in.",
-          "The points table can be found in an excel spreadsheet kept by some member of the DFL Committee."
-        ]
-      },
-      {
-        "sectionTitle": "Retiring from the Professional Drunken Foozball Circuit",
-        "subSections": [
-          "Any player wishing to retire from the Drunken Foozball League must write a 12-page essay on their contributions to the League and whether it was worth it.",
-          "A ceremony will be held to honor the retiree and must include a funeral pyre constructed on a boat and sailed down the Susquehanna River.",
-          "Any team wishing to officially retire from the professional drunken foozball circuit must be removed from the official DFL Rankings."
-        ]
-      }
-    ]
-  },
-  {
-    "chapterTitle": "Code of Ethics",
-    "sections": [
-      {
-        "sectionTitle": "The Code",
-        "subSections": [
-          "Any action of an unsportsmanlike or unethical nature (i.e. whining like a little bitch) during tournament play, in the tournament room, or on the grounds of the host facility, will be considered a violation of the Code of Ethics. Mutual respect between all players, officials and/or spectators is a requirement.  It shall be the aim of every player and official to represent drunken foozball in the most positive and sportsmanlike manner possible.  The standards of sportsmanship are reasonably expected to drop as participants become more intoxicated.",
           "The penalty for breaking the Code of Ethics is to drink."
         ]
       },
       {
-        "sectionTitle": "Language and Behavior",
+        "sectionTitle": "The Match",
+        "description": "Unless otherwise stated by the tournament directors, a match shall consist of 2 out of 3 games, unless you lose 2, then it’s 3 out of 5, but if you lose 3 it’s 5 out of 7. Each game shall consist of 10 points (for the winners at least).",
         "subSections": [
-          "Ummm...yep."
+          "The number of games played is the responsibility of the Tournament Directors and will be published in the tournament announcement.",
+          "The penalty for breaking the official number of games or points played may be forfeiture of a match or expulsion from the tournament, and of course, drinking."
         ]
-      }
-    ]
-  },
-  {
-    "chapterTitle": "Rules of Play",
-    "sections": [
+      },
       {
-        "sectionTitle": "The Serve",
+        "sectionTitle": "To Start a Match",
+        "description": "The lower seeded team has the choice of picking table side or which team serves first.  The higher seeded team has the other choice.  In the case of two unseeded teams, any two sided object can be flipped to determine who makes first choice.",
         "subSections": [
-          "The serve shall begin with the ball in the hands of the serving player.  The player must then follow the ready protocol.",
+          "Once a team has chosen either the table side or the first serve, they may not change their decision.",
+          "The match officially starts once the ball has been put into play."
+        ]
+      },
+      {
+        "sectionTitle": "Socials",
+        "description": "At any time during a dead ball situation, any member of the tournament may call a social by yelling ‘social’.",
+        "subSections": [
+          "All participants in the tournament must drink a reasonable amount of an alcoholic beverage.",
+          "If a participant is underage, they may skip socials (wink wink). No really, kids. Skip the socials.",
+          "A player who fails to participate in a social will have to drink more.",
+          "SOCIALLLLLL!!!!!"
+        ]
+      },
+      {
+        "sectionTitle": "Serve Protocol",
+        "description": "A serve is defined as putting the ball into play at the five-man rod at the beginning of a game, after a point is scored or if the ball is awarded to a player following a rules infraction.",
+        "subSections": [
+          "The serve shall begin with the ball in the hands of the serving player. The player must then follow the ready protocol.",
           "A player may spin the ball while serving, but if a goal is scored without the ball touching a player’s stick, then you’re a little bitch and it doesn’t count.",
-          "Following the first serve of a match, subsequent serves shall be made by the team last scored upon."
+          "Following the first serve of a match, subsequent serves shall be made by the team last scored upon (i.e Woodsy and Rev).",
+          "If Rev cheats he drinks."
         ]
       },
       {
         "sectionTitle": "Ready Protocol",
+        "description": "The ready protocol will be used whenever putting the ball into play.",
         "subSections": [
-          "Before putting the ball into play the player in possession of the ball shall ask the opponent if he is ready.",
-          "All players must be given a reasonable amount of time to finish a social and get back into position. Failure to allow a player to finish a social results in a penalty for the serving player.  Drink."
+          "Before putting the ball into play the player in possession of the ball shall ask the opponent if he is ready. No answer is accepted as a confirmation of readiness.",
+          "All players must be given a reasonable amount of time to finish a social and get back into position. Failure to allow a player to finish a social results in a penalty for the serving player. Drink."
         ]
       },
       {
@@ -350,34 +108,57 @@
       },
       {
         "sectionTitle": "Ball Off the Table",
+        "description": "If the ball leaves the playing area and strikes the scoring markers, light fixture, alcoholic drink, or any object that is not part of the table, the ball shall be declared off the table. If the ball hits the top of the side rails or cabinet ends and then immediately returns to the playing surface it will be considered in play.",
         "subSections": [
-          "If the ball leaves the playing area and strikes the scoring markers, light fixture, alcoholic drink, or any object that is not part of the table, the ball shall be declared off the table. If the ball hits the top of the side rails or cabinet ends and then immediately returns to the playing surface it will be considered in play.",
           "The play area shall be defined as the area above the playing surface to the height of the sideboards of the cabinet. The top of the side rails and cabinet ends are only in play if the ball immediately returns to the playing surface.",
-          "A ball entering the serving hole and then returning to the playfield is still considered ‘in play.’",
+          "A ball entering the serving hole and then returning to the playfield is still considered 'in play.'.",
           "If the power of a player’s shot or pass causes the ball to go off the table it will be put back into play by the opponent.",
-          "A player may not perform any shot that causes the ball to lob or volley over the opponent’s rods."
+          "A player may not perform any shot that causes the ball to lob or volley over the opponent's rods."
         ]
       },
       {
         "sectionTitle": "Dead Ball",
+        "description": "A ball shall be declared a dead ball when it has completely stopped its motion and is not within reach of any player figure.",
         "subSections": [
-          "A ball shall be declared a dead ball when it has completely stopped its motion and is not within reach of any player figure.",
-          "The ball shall be put back into play through the serving hole by the last team to serve.",
+          "The ball shall be put back into play through the serving hole by whoever grabs it first.",
           "A player may not blow on a ball or move the table in any fashion in an attempt to move the ball within reach of a player figure."
         ]
       },
       {
-        "sectionTitle": "Point Scored",
+        "sectionTitle": "Time Out",
+        "description": "Each team is allowed two time outs per game during which the players may leave the table. Such time outs shall not exceed 1 minute.",
         "subSections": [
-          "A ball entering the goal shall count as a point, as long as it was legally scored.  A ball which enters the goal but returns to the playing surface does not count as a goal.",
+          "Either team may take the full minute, even if the team that called the time out does not wish to take the full allotment.",
+          "In any doubles event, either team may switch positions during a time out.",
+          "A player who removes both hands from the handles and turns completely away from the table while the ball is in play shall be deemed to have requested a time out."
+        ]
+      },
+      {
+        "sectionTitle": "Beer Runs",
+        "description": "Any player may declare they are out of alcohol to request a beer run. This does not count as a time out.",
+        "subSections": [
+          "A member not involved in the current match may be asked to retrieve an alcoholic beverage. If they refuse, they’re a little bitch.",
+          "A player may be excused from only 1 social if their alcoholic beverage is empty."
+        ]
+      },
+      {
+        "sectionTitle": "Points Scored",
+        "description": "A ball entering the goal shall count as a point, as long as it was legally scored. A ball which enters the goal but returns to the playing surface and/or leaves the table does not count as a goal.",
+        "subSections": [
           "If a point is not counted on the scoring markers and both teams agree that it was previously scored and inadvertently not marked up, the point shall count.",
-          "When a point is scored, one marker is moved (ONE, UNCLE TOMMY! JUST ONE!)."
+          "When a point is scored, one marker is moved (ONE, REV, JUST ONE!)."
+        ]
+      },
+      {
+        "sectionTitle": "Table Sides",
+        "subSections": [
+          "At the end of each game, teams shall switch sides of the table before play of the next game can begin."
         ]
       },
       {
         "sectionTitle": "Change of Positions",
+        "description": "In any doubles event, players may only play the two rods normally designated for his/her position. Once the ball is put into play, the players must play the same position until a point is scored.",
         "subSections": [
-          "In any doubles event, players may only play the two rods normally designated for his position.  Once the ball is put into play, the players must play the same position until a point is scored.",
           "Either team may switch positions during a time out, between points, or between games.",
           "Once a team has switched positions, they may not switch back until after the ball has been put back into play.",
           "Illegally switching positions results in a drink."
@@ -385,53 +166,59 @@
       },
       {
         "sectionTitle": "Spinning the Rods",
+        "description": "Spinning of the rods is illegal. Bitch.",
         "subSections": [
-          "Spinning of the rods is illegal.  Bitch.",
-          "Spinning is defined as the rotation of any soccer figure more than 360 degrees before or more than 360 degrees after striking the ball.  In calculating the 360 degrees you do not add the degrees spun prior to striking the ball to the degrees spun after striking the ball.",
-          "Drink."
+          "Spinning is defined as the rotation of any player figure more than 360 degrees before or more than 360 degrees after striking the ball. In calculating the 360 degrees you do not add the degrees spun prior to striking the ball to the degrees spun after striking the ball. Drink.",
+          "Exceptions will be made for rookie players that do not appreciate the finer things in life."
         ]
       },
       {
         "sectionTitle": "Jarring",
+        "description": "Jarring, sliding, or lifting of the table while the ball is in play is illegal. Whether or not the table jarring is done intentionally is of no consequence.",
         "subSections": [
-          "Jarring, sliding, or lifting of the table while the ball is in play is illegal.  Whether or not the table jarring is done intentionally is of no consequence.",
           "Drink."
         ]
       },
       {
         "sectionTitle": "Reaching into the Playing Area",
+        "description": "It is illegal for a player to reach into the play area while the ball is in play.",
         "subSections": [
-          "It is illegal for a player to reach into the play area while the ball is in play.",
           "A spinning ball is still considered live, even if it is not in reach of a player figure."
+        ]
+      },
+      {
+        "sectionTitle": "Alterations to the Table",
+        "description": "Playing area - no changes can be made that would affect the interior playing characteristics of the table by any player.",
+        "subSections": [
+          "A player cannot wipe sweat, spit, or any foreign substance on his hand before wiping ball marks off the table.",
+          "A player may not place anything on the rods or handles."
+        ]
+      },
+      {
+        "sectionTitle": "Language and Behavior",
+        "subSections": [
+          "Ummm...yep."
+        ]
+      },
+      {
+        "sectionTitle": "Rules, Decisions, and Appeals",
+        "subSections": [
+          "You're wrong. Drink."
         ]
       }
     ]
   },
   {
-    "chapterTitle": "The Residing DFL Committee",
+    "chapterTitle": "The Official Committee",
     "sections": [
       {
-        "sectionTitle": "Self-Apointed DFL Comissioner",
+        "sectionTitle": "Committee",
+        "description": "The Official Drunken Foozball Committee currently consists of the founding members:",
         "subSections": [
-          "Thomas 'Rev' Dougher"
-        ]
-      },
-      {
-        "sectionTitle": "Media Director",
-        "subSections": [
-          "Samuel 'Lep' Fumanti"
-        ]
-      },
-      {
-        "sectionTitle": "Code Monkey",
-        "subSections": [
-          "Frank 'Woodsy' Mazzarella"
-        ]
-      },
-      {
-        "sectionTitle": "Crotchety Old Man",
-        "subSections": [
-          "Samuel 'Bear' Fumanti"
+          "Thomas 'Rev' Dougher",
+          "Samuel 'Bear' Fumanti",
+          "Frank 'Woodsy' Mazzarella",
+          "Samuel 'Lep' Fumanti III"
         ]
       }
     ]
