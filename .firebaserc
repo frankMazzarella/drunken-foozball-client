@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "drunken-foozball"
+    "default": "drunken-foozball",
+    "staging": "drunken-foozball-staging"
   }
 }
