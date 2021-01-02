@@ -3,6 +3,9 @@ import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
 import ResponsiveDrawer from './ResponsiveDrawer';
+import FirebaseService from './services/Firebase.serivce';
+
+FirebaseService.init();
 
 function App() {
   const theme = createMuiTheme({

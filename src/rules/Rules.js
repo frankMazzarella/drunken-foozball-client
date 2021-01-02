@@ -4,6 +4,7 @@ import { CardHeader, Card, CardContent, Grid, makeStyles } from '@material-ui/co
 import rules from './rules.json';
 import RuleChapter from './RuleChapter';
 import TableOfContents from './TableOfContents';
+import FirebaseService from '../services/Firebase.serivce';
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -14,6 +15,11 @@ const useStyles = makeStyles(() => ({
 export default function Rules() {
   const classes = useStyles();
   const header = `Drunken Foozball League Official Rules and Interpretations ${new Date().getFullYear()}`;
+
+  const rulesRef = FirebaseService.getDatabaseRef('rules');
+  rulesRef.on('value', snap => {
+    console.log(JSON.parse(atob(snap.val())));
+  });
 
   return (
     <Grid container direction="column" alignItems="center">
