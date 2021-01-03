@@ -8,7 +8,7 @@ export default class TableOfContents extends Component {
       const chapterNumber = index + 1;
       return (
         <ul key={chapterNumber}>
-          <li><Typography variant="body1">{`${chapterNumber + 1}. ${chapter.chapterTitle}`}</Typography></li>
+          <li><Typography variant="h6">{`${chapterNumber + 1}. ${chapter.chapterTitle}`}</Typography></li>
           {this.getSections(chapter, chapterNumber)}
         </ul>
       )
@@ -19,7 +19,7 @@ export default class TableOfContents extends Component {
     return chapter.sections.map((section, index) => {
       const sectionNumber = `${chapterNumber}.${index + 1}`
       return (
-        <Typography key={index} variant="body2">
+        <Typography key={index} variant="body1">
           <Link to={sectionNumber} duration={1000} offset={-65} smooth>
             <span style={{cursor: 'pointer'}}>{`${sectionNumber}. ${section.sectionTitle}`}</span>
           </Link>
