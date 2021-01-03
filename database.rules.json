@@ -1,6 +1,6 @@
 {
   "rules": {
     ".read": "true",
-    ".write": "root.child('allowedUids').child(auth.uid).exists()"
+    ".write": "root.child('admins').child(auth.uid).exists()"
   }
 }
