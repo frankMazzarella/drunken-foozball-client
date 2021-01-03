@@ -1,5 +1,6 @@
 import firebase from 'firebase/app';
 import 'firebase/database';
+import 'firebase/auth';
 
 export default class FirebaseService {
   static init() {
@@ -16,5 +17,15 @@ export default class FirebaseService {
 
   static getDatabaseRef(path) {
     return firebase.database().ref().child(path);
+  }
+
+  static login(email, password) {
+    return new Promise((resolve, reject) => {
+      firebase
+        .auth()
+        .signInWithEmailAndPassword(email, password)
+        .then((user) => resolve(user))
+        .catch((error) => reject(error));
+    });
   }
 }

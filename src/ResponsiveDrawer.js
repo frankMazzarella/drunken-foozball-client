@@ -8,6 +8,7 @@ import GavelIcon from '@material-ui/icons/Gavel';
 import FormatListNumberedIcon from '@material-ui/icons/FormatListNumbered';
 import EmojiEventsIcon from '@material-ui/icons/EmojiEvents';
 import VerifiedUserIcon from '@material-ui/icons/VerifiedUser';
+import SportsSoccerIcon from '@material-ui/icons/SportsSoccer';
 import {
   AppBar,
   CssBaseline,
@@ -32,6 +33,7 @@ import Rankings from './rankings/Rankings';
 import Tournaments from './tournaments/Tournaments';
 import Admin from './admin/Admin';
 import EditRules from './admin/EditRules';
+import Login from './login/Login';
 
 const drawerWidth = 240;
 
@@ -67,7 +69,7 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1,
     padding: theme.spacing(3),
   },
-  version: {
+  sidebarFooter: {
     position: 'absolute',
     bottom: 0,
     backgroundColor: '#464646',
@@ -120,7 +122,11 @@ function ResponsiveDrawer(props) {
         </ListItem>
       </List>
       <Divider />
-      <List className={classes.version}>
+      <List className={classes.sidebarFooter}>
+        <ListItem button component={Link} to="/login" onClick={handleDrawerClose}>
+          <ListItemIcon><SportsSoccerIcon /></ListItemIcon>
+          <ListItemText primary="Login" />
+        </ListItem>
         <ListItem key={'Version'}>
           <ListItemIcon><InfoIcon /></ListItemIcon>
           <ListItemText primary={'Version 1.3.5'} />
@@ -188,6 +194,7 @@ function ResponsiveDrawer(props) {
           <Route path="/tournaments" component={Tournaments} />
           <Route path="/admin/edit-rules" component={EditRules} />
           <Route path="/admin" component={Admin} />
+          <Route path="/login" component={Login} />
           <Route path="*" component={Home} />
         </Switch>
       </main>
