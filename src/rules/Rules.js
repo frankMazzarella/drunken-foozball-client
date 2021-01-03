@@ -19,10 +19,16 @@ export default function Rules() {
 
   useEffect(() => {
     const rulesRef = FirebaseService.getDatabaseRef('rules');
+    let isComponentMounted = true;
     rulesRef.on('value', snap => {
-      setRules(JSON.parse(atob(snap.val())));
-      setIsLoading(false);
+      if (isComponentMounted) {
+        setRules(JSON.parse(atob(snap.val())));
+        setIsLoading(false);
+      }
     });
+    return () => {
+      isComponentMounted = false;
+    }
   }, [])
 
   return (
