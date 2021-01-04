@@ -34,9 +34,9 @@ import Tournaments from './tournaments/Tournaments';
 import Admin from './admin/Admin';
 import EditRules from './admin/EditRules';
 import Login from './login/Login';
+import FirebaseService from './services/Firebase.serivce';
 
 const drawerWidth = 240;
-
 const useStyles = makeStyles(theme => ({
   root: {
     display: 'flex',
@@ -82,6 +82,7 @@ function ResponsiveDrawer(props) {
   const classes = useStyles();
   const theme = useTheme();
   const [mobileOpen, setMobileOpen] = React.useState(false);
+  const [isLoggedIn, setIsLoggedIn] = React.useState(false);
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -90,6 +91,14 @@ function ResponsiveDrawer(props) {
   const handleDrawerClose = () => {
     setMobileOpen(false);
   }
+
+  const signOut = () => {
+    FirebaseService.signOut()
+      .then(() => setIsLoggedIn(false))
+      .catch(error => console.error(error));
+  }
+
+  FirebaseService.subscribeToAuthChanges(isLoggedIn => setIsLoggedIn(isLoggedIn));
 
   const drawer = (
     <div>
@@ -116,17 +125,28 @@ function ResponsiveDrawer(props) {
           <ListItemIcon><EmojiEventsIcon /></ListItemIcon>
           <ListItemText primary="Tournaments" />
         </ListItem>
-        <ListItem button component={Link} to="/admin" onClick={handleDrawerClose}>
-          <ListItemIcon><VerifiedUserIcon /></ListItemIcon>
-          <ListItemText primary="Admin" />
-        </ListItem>
+        {
+          isLoggedIn ?
+            <ListItem button component={Link} to="/admin" onClick={handleDrawerClose}>
+              <ListItemIcon><VerifiedUserIcon /></ListItemIcon>
+              <ListItemText primary="Admin" />
+            </ListItem> :
+            null
+        }
       </List>
       <Divider />
       <List className={classes.sidebarFooter}>
-        <ListItem button component={Link} to="/login" onClick={handleDrawerClose}>
-          <ListItemIcon><SportsSoccerIcon /></ListItemIcon>
-          <ListItemText primary="Login" />
-        </ListItem>
+        {
+          isLoggedIn ?
+            <ListItem button onClick={signOut}>
+              <ListItemIcon><SportsSoccerIcon /></ListItemIcon>
+              <ListItemText primary="Sign Out" />
+            </ListItem> :
+            <ListItem button component={Link} to="/login" onClick={handleDrawerClose}>
+              <ListItemIcon><SportsSoccerIcon /></ListItemIcon>
+              <ListItemText primary="Login" />
+            </ListItem>
+        }
         <ListItem key={'Version'}>
           <ListItemIcon><InfoIcon /></ListItemIcon>
           <ListItemText primary={'Version 1.3.6'} />

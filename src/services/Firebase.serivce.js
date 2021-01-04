@@ -28,4 +28,22 @@ export default class FirebaseService {
         .catch((error) => reject(error));
     });
   }
+
+  static subscribeToAuthChanges(callback) {
+    firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        callback(true);
+      } else {
+        callback(false);
+      }
+    });
+  }
+
+  static signOut() {
+    return new Promise((resolve, reject) => {
+      firebase.auth().signOut()
+        .then(() => resolve())
+        .catch((error) => reject(error));
+    })
+  }
 }
