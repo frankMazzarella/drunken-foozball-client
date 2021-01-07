@@ -11,14 +11,36 @@ import FirebaseService from '../services/Firebase.serivce';
 export default class EditRules extends Component {
   constructor(props) {
     super(props);
-    this.state = { editorValue: '' }
+    this.state = { editorValue: '' };
+    this.handleSaveClicked = this.handleSaveClicked.bind(this);
+    this.handleEditorValueChange = this.handleEditorValueChange.bind(this);
+    this.rulesRef = FirebaseService.getDatabaseRef('rules');
   }
 
   componentDidMount() {
-    const rulesRef = FirebaseService.getDatabaseRef('rules');
-    rulesRef.on('value', snap => {
+    this.rulesRef.on('value', snap => {
       this.setState({ editorValue: atob(snap.val()) });
     });
+  }
+
+  handleSaveClicked() {
+    try {
+      JSON.parse(this.state.editorValue);
+    } catch (error) {
+      return console.error('shit cant do the json');
+    }
+    this.rulesRef.set(btoa(this.state.editorValue), (error) => {
+      if (error) {
+        console.log('a wild error has appeared');
+        console.error(error);
+      } else {
+        console.log('done');
+      }
+    });
+  }
+
+  handleEditorValueChange(newValue) {
+    this.setState({ editorValue: newValue });
   }
 
   render() {
@@ -26,11 +48,12 @@ export default class EditRules extends Component {
       <Grid container direction="column" alignItems="center">
         <Grid item xs={12}>
           <Button variant="contained" component={Link} to="/admin">Go Back</Button>
-          <Button variant="contained" color="primary">Save</Button>
+          <Button variant="contained" onClick={this.handleSaveClicked} color="primary">Save</Button>
         </Grid>
         <AceEditor
           defaultValue="Loading..."
           value={this.state.editorValue}
+          onChange={this.handleEditorValueChange}
           mode="json"
           theme="twilight"
           width="100%"
