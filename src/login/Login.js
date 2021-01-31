@@ -1,19 +1,21 @@
 import React, { useState } from 'react';
 import { Grid, TextField, Button, Card, CardHeader } from '@material-ui/core';
+import { useHistory } from 'react-router-dom';
 
 import FirebaseService from '../services/Firebase.serivce';
 
+// TODO: fix the error message cause it looks like ass
+// TODO: set up route guard to prevent unauthed users from accessing pages that dont belong to them
 export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+  const history = useHistory();
 
   function handleLoginClick() {
     setErrorMessage('');
     FirebaseService.login(email, password)
-      .then((user) => {
-        console.log(user);
-      })
+      .then((user) => history.push('/admin'))
       .catch((error) => {
         console.error(error);
         setErrorMessage(error.message);

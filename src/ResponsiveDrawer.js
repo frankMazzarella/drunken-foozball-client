@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch, Link } from 'react-router-dom';
+import { Route, Switch, Link, useHistory } from 'react-router-dom';
 import MenuIcon from '@material-ui/icons/Menu';
 import HomeIcon from '@material-ui/icons/Home';
 import InfoIcon from '@material-ui/icons/Info';
@@ -83,6 +83,7 @@ function ResponsiveDrawer(props) {
   const theme = useTheme();
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const [isLoggedIn, setIsLoggedIn] = React.useState(false);
+  const history = useHistory();
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -94,7 +95,10 @@ function ResponsiveDrawer(props) {
 
   const signOut = () => {
     FirebaseService.signOut()
-      .then(() => setIsLoggedIn(false))
+      .then(() => {
+        setIsLoggedIn(false);
+        history.push('/');
+      })
       .catch(error => console.error(error));
   }
 
