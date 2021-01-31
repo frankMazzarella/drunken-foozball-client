@@ -3,6 +3,7 @@ import { Route, Switch, Link, useHistory } from 'react-router-dom';
 import MenuIcon from '@material-ui/icons/Menu';
 import HomeIcon from '@material-ui/icons/Home';
 import InfoIcon from '@material-ui/icons/Info';
+import Looks5Icon from '@material-ui/icons/Looks5';
 import EqualizerIcon from '@material-ui/icons/Equalizer';
 import GavelIcon from '@material-ui/icons/Gavel';
 import FormatListNumberedIcon from '@material-ui/icons/FormatListNumbered';
@@ -35,6 +36,7 @@ import Admin from './admin/Admin';
 import EditRules from './admin/EditRules';
 import Login from './login/Login';
 import FirebaseService from './services/Firebase.serivce';
+import Scoreboard from './scoreboard/Scoreboard';
 
 const drawerWidth = 240;
 const useStyles = makeStyles(theme => ({
@@ -129,6 +131,10 @@ function ResponsiveDrawer(props) {
           <ListItemIcon><EmojiEventsIcon /></ListItemIcon>
           <ListItemText primary="Tournaments" />
         </ListItem>
+        <ListItem button component={Link} to="/scoreboard" key="Virtual Scoreboard" onClick={handleDrawerClose}>
+          <ListItemIcon><Looks5Icon /></ListItemIcon>
+          <ListItemText primary="Virtual Scoreboard" />
+        </ListItem>
         {
           isLoggedIn ?
             <ListItem button component={Link} to="/admin" onClick={handleDrawerClose}>
@@ -219,10 +225,11 @@ function ResponsiveDrawer(props) {
           <Route path="/admin/edit-rules" component={EditRules} />
           <Route path="/admin" component={Admin} />
           <Route path="/login" component={Login} />
+          <Route path="/scoreboard" component={Scoreboard} />
           <Route path="*" component={Home} />
         </Switch>
       </main>
-    </div>
+    </div >
   );
 }
 
