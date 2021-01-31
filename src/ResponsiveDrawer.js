@@ -153,7 +153,7 @@ function ResponsiveDrawer(props) {
         }
         <ListItem key={'Version'}>
           <ListItemIcon><InfoIcon /></ListItemIcon>
-          <ListItemText primary={'Version 1.3.6'} />
+          <ListItemText primary={'Version 1.4.0'} />
         </ListItem>
       </List>
     </div>
