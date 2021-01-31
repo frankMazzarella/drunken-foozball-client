@@ -15,7 +15,7 @@ export default function Login() {
   function handleLoginClick() {
     setErrorMessage('');
     FirebaseService.login(email, password)
-      .then((user) => history.push('/admin'))
+      .then(() => history.push('/admin'))
       .catch((error) => {
         console.error(error);
         setErrorMessage(error.message);
