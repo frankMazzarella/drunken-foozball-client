@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { CardHeader, Card, CardContent, Grid, makeStyles } from '@material-ui/core';
 
-import rules from './rules.json';
 import RuleChapter from './RuleChapter';
 import TableOfContents from './TableOfContents';
+import FirebaseService from '../services/Firebase.serivce';
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -14,6 +14,22 @@ const useStyles = makeStyles(() => ({
 export default function Rules() {
   const classes = useStyles();
   const header = `Drunken Foozball League Official Rules and Interpretations ${new Date().getFullYear()}`;
+  const [rules, setRules] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const rulesRef = FirebaseService.getDatabaseRef('rules');
+    let isComponentMounted = true;
+    rulesRef.on('value', snap => {
+      if (isComponentMounted) {
+        setRules(JSON.parse(atob(snap.val())));
+        setIsLoading(false);
+      }
+    });
+    return () => {
+      isComponentMounted = false;
+    }
+  }, [])
 
   return (
     <Grid container direction="column" alignItems="center">
@@ -22,9 +38,9 @@ export default function Rules() {
           <CardHeader title={header} />
         </Card>
         <Card className={classes.root}>
-          <CardHeader title={'Table of Contents'} />
+          <CardHeader title={isLoading ? 'Rules are loading...' : 'Table of Contents'} />
           <CardContent>
-            <TableOfContents />
+            <TableOfContents rules={rules} />
           </CardContent>
         </Card>
         {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch, Link } from 'react-router-dom';
+import { Route, Switch, Link, useHistory } from 'react-router-dom';
 import MenuIcon from '@material-ui/icons/Menu';
 import HomeIcon from '@material-ui/icons/Home';
 import InfoIcon from '@material-ui/icons/Info';
@@ -7,6 +7,8 @@ import EqualizerIcon from '@material-ui/icons/Equalizer';
 import GavelIcon from '@material-ui/icons/Gavel';
 import FormatListNumberedIcon from '@material-ui/icons/FormatListNumbered';
 import EmojiEventsIcon from '@material-ui/icons/EmojiEvents';
+import VerifiedUserIcon from '@material-ui/icons/VerifiedUser';
+import SportsSoccerIcon from '@material-ui/icons/SportsSoccer';
 import {
   AppBar,
   CssBaseline,
@@ -29,9 +31,12 @@ import Stats from './stats/Stats';
 import Rules from './rules/Rules';
 import Rankings from './rankings/Rankings';
 import Tournaments from './tournaments/Tournaments';
+import Admin from './admin/Admin';
+import EditRules from './admin/EditRules';
+import Login from './login/Login';
+import FirebaseService from './services/Firebase.serivce';
 
 const drawerWidth = 240;
-
 const useStyles = makeStyles(theme => ({
   root: {
     display: 'flex',
@@ -64,7 +69,7 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1,
     padding: theme.spacing(3),
   },
-  version: {
+  sidebarFooter: {
     position: 'absolute',
     bottom: 0,
     backgroundColor: '#464646',
@@ -77,6 +82,8 @@ function ResponsiveDrawer(props) {
   const classes = useStyles();
   const theme = useTheme();
   const [mobileOpen, setMobileOpen] = React.useState(false);
+  const [isLoggedIn, setIsLoggedIn] = React.useState(false);
+  const history = useHistory();
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -86,37 +93,67 @@ function ResponsiveDrawer(props) {
     setMobileOpen(false);
   }
 
+  const signOut = () => {
+    FirebaseService.signOut()
+      .then(() => {
+        setIsLoggedIn(false);
+        history.push('/');
+      })
+      .catch(error => console.error(error));
+  }
+
+  FirebaseService.subscribeToAuthChanges(isLoggedIn => setIsLoggedIn(isLoggedIn));
+
   const drawer = (
     <div>
       <div className={classes.toolbar} />
       <Divider />
       <List>
-        <ListItem button component={Link} to="/" key="Home" onClick={handleDrawerClose}>
+        <ListItem button component={Link} to="/" onClick={handleDrawerClose}>
           <ListItemIcon><HomeIcon /></ListItemIcon>
           <ListItemText primary="Home" />
         </ListItem>
-        <ListItem button component={Link} to="/rules" key="Rules" onClick={handleDrawerClose}>
+        <ListItem button component={Link} to="/rules" onClick={handleDrawerClose}>
           <ListItemIcon><GavelIcon /></ListItemIcon>
           <ListItemText primary="Rules" />
         </ListItem>
-        <ListItem button component={Link} to="/stats" key="Stats" onClick={handleDrawerClose}>
+        <ListItem button component={Link} to="/stats" onClick={handleDrawerClose}>
           <ListItemIcon><EqualizerIcon /></ListItemIcon>
           <ListItemText primary="Stats" />
         </ListItem>
-        <ListItem button component={Link} to="/rankings" key="Rankings" onClick={handleDrawerClose}>
+        <ListItem button component={Link} to="/rankings" onClick={handleDrawerClose}>
           <ListItemIcon><FormatListNumberedIcon /></ListItemIcon>
           <ListItemText primary="Rankings" />
         </ListItem>
-        <ListItem button component={Link} to="/tournaments" key="Tournaments" onClick={handleDrawerClose}>
+        <ListItem button component={Link} to="/tournaments" onClick={handleDrawerClose}>
           <ListItemIcon><EmojiEventsIcon /></ListItemIcon>
           <ListItemText primary="Tournaments" />
         </ListItem>
+        {
+          isLoggedIn ?
+            <ListItem button component={Link} to="/admin" onClick={handleDrawerClose}>
+              <ListItemIcon><VerifiedUserIcon /></ListItemIcon>
+              <ListItemText primary="Admin" />
+            </ListItem> :
+            null
+        }
       </List>
       <Divider />
-      <List className={classes.version}>
+      <List className={classes.sidebarFooter}>
+        {
+          isLoggedIn ?
+            <ListItem button onClick={signOut}>
+              <ListItemIcon><SportsSoccerIcon /></ListItemIcon>
+              <ListItemText primary="Sign Out" />
+            </ListItem> :
+            <ListItem button component={Link} to="/login" onClick={handleDrawerClose}>
+              <ListItemIcon><SportsSoccerIcon /></ListItemIcon>
+              <ListItemText primary="Login" />
+            </ListItem>
+        }
         <ListItem key={'Version'}>
           <ListItemIcon><InfoIcon /></ListItemIcon>
-          <ListItemText primary={'Version 1.3.6'} />
+          <ListItemText primary={'Version 1.4.0'} />
         </ListItem>
       </List>
     </div>
@@ -179,6 +216,9 @@ function ResponsiveDrawer(props) {
           <Route path="/stats" component={Stats} />
           <Route path="/rankings" component={Rankings} />
           <Route path="/tournaments" component={Tournaments} />
+          <Route path="/admin/edit-rules" component={EditRules} />
+          <Route path="/admin" component={Admin} />
+          <Route path="/login" component={Login} />
           <Route path="*" component={Home} />
         </Switch>
       </main>
