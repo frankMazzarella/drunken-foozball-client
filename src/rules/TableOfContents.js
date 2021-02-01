@@ -8,7 +8,7 @@ export default class TableOfContents extends Component {
       const chapterNumber = index + 1;
       return (
         <ul key={chapterNumber}>
-          <li><Typography variant="h6">{`${chapterNumber + 1}. ${chapter.chapterTitle}`}</Typography></li>
+          <li><Typography variant="h6">{`${chapterNumber}. ${chapter.chapterTitle}`}</Typography></li>
           {this.getSections(chapter, chapterNumber)}
         </ul>
       )
