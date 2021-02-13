@@ -1,5 +1,80 @@
 [
   {
+    "name": "Cupid's Arrow Cup",
+    "level": "DFL 100",
+    "date": "February 12, 2021",
+    "location": "The Harrington House",
+    "results": [
+      {
+        "finish": "Winner",
+        "team": "S.A.M.",
+        "points": 100
+      },
+      {
+        "finish": "Finalist",
+        "team": "Free Will",
+        "points": 60
+      },
+      {
+        "finish": "Preliminary",
+        "team": "Rock of Gibraltar",
+        "points": 10
+      }
+    ],
+    "rounds": [
+      {
+        "name": "Championship Leg 2",
+        "games": [
+          {
+            "winner": "S.A.M.",
+            "loser": "Free Will",
+            "score": "10-7"
+          }
+        ]
+      },
+      {
+        "name": "Championship Leg 1",
+        "games": [
+          {
+            "winner": "S.A.M.",
+            "loser": "Free Will",
+            "score": "10-6"
+          }
+        ]
+      },
+      {
+        "name": "Loser's Bracket Final",
+        "games": [
+          {
+            "winner": "S.A.M.",
+            "loser": "Rock of Gibraltar",
+            "score": "10-6"
+          }
+        ]
+      },
+      {
+        "name": "Main Bracket Final",
+        "games": [
+          {
+            "winner": "Free Will",
+            "loser": "S.A.M.",
+            "score": "10-7"
+          }
+        ]
+      },
+      {
+        "name": "Main Bracket Round 1",
+        "games": [
+          {
+            "winner": "Free Will",
+            "loser": "Rock of Gibraltar",
+            "score": "10-9"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "New Year's Eve Open",
     "level": "DFL Cup",
     "date": "December 31, 2020",
