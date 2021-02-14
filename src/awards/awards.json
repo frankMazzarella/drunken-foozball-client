@@ -11,11 +11,16 @@
         "team": "Free Will"
       },
       {
-        "player": "Marissa",
-        "team": "Free Will"
+        "player": "Woodsy",
+        "team": "Rock of Gibraltar"
       }
     ],
     "history": [
+      {
+        "year": "2020",
+        "winner": "Lep",
+        "team": "S.A.M."
+      },
       {
         "year": "2019",
         "winner": "Lacy",
@@ -31,15 +36,20 @@
         "team": "Free Will"
       },
       {
-        "player": "Bear",
-        "team": "S.A.M."
-      },
-      {
         "player": "Woodsy",
         "team": "Rock of Gibraltar"
+      },
+      {
+        "player": "Bear",
+        "team": "S.A.M."
       }
     ],
     "history": [
+      {
+        "year": "2020",
+        "winner": "Lacy",
+        "team": "Free Will"
+      },
       {
         "year": "2019",
         "winner": "Bear",
@@ -59,11 +69,16 @@
         "team": "Free Will"
       },
       {
-        "player": "Woodsy",
+        "player": "Rev",
         "team": "Rock of Gibraltar"
       }
     ],
     "history": [
+      {
+        "year": "2020",
+        "winner": "Lep",
+        "team": "S.A.M."
+      },
       {
         "year": "2019",
         "winner": "Lep",
@@ -89,6 +104,11 @@
     ],
     "history": [
       {
+        "year": "2020",
+        "winner": "Marissa",
+        "team": "Free Will"
+      },
+      {
         "year": "2019",
         "winner": "Lacy",
         "team": "Free Will"
@@ -99,12 +119,12 @@
     "name": "The You Don't Suck Anymore Award",
     "race": [
       {
-        "player": "Kevin",
-        "team": "Fire Breathing Rubber Duckies"
+        "player": "Woodsy",
+        "team": "Rock of Gibraltar"
       },
       {
-        "player": "Katelyn",
-        "team": "Fire Breathing Rubber Duckies"
+        "player": "Rev",
+        "team": "Rock of Gibraltar"
       },
       {
         "player": "Marissa",
@@ -112,6 +132,11 @@
       }
     ],
     "history": [
+      {
+        "year": "2020",
+        "winner": "Kevin",
+        "team": "Fire Breathing Rubber Duckies"
+      },
       {
         "year": "2019",
         "winner": "Marissa",
@@ -135,8 +160,13 @@
     "race": [],
     "history": [
       {
+        "year": "2020",
+        "winner": "Woodsy/Lep",
+        "team": ""
+      },
+      {
         "year": "2019",
-        "winner": "Woodsy/Marissa Dougher",
+        "winner": "Woodsy/Marissa",
         "team": ""
       }
     ]
