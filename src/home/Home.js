@@ -37,7 +37,13 @@ export default function Home() {
       </Grid>
       <Grid item sm={10} lg={10}>
         <Typography className={classes.story}>
-            The 2021 Season of the Drunken Foozball League officially got underway this weekend!  Only three teams were available to compete, but they put on a show.  Rock of Gibraltar went up 9-6 against Free Will in the opening match, signalling a quick fall from grace for the defending champions, but they clamped down and pulled out the win.  The reigning champs dispatched S.A.M. next, but the father and son duo quickly dealt with Rock of Gibraltar to return to the big stage.  In two intense games, S.A.M. were able to reclaim their throne atop the DFL circuit.  Will Free Will right the ship and go back-to-back on NYE, or will S.A.M. take their trophies back?  The long road to New Year's Eve begins!
+          The 2021 Season of the Drunken Foozball League officially got underway this weekend! Only three teams were
+          available to compete, but they put on a show. Rock of Gibraltar went up 9-6 against Free Will in the opening
+          match, signalling a quick fall from grace for the defending champions, but they clamped down and pulled out
+          the win. The reigning champs dispatched S.A.M. next, but the father and son duo quickly dealt with Rock of
+          Gibraltar to return to the big stage. In two intense games, S.A.M. were able to reclaim their throne atop the
+          DFL circuit. Will Free Will right the ship and go back-to-back on NYE, or will S.A.M. take their trophies
+          back? The long road to New Year's Eve begins!
         </Typography>
       </Grid>
     </Grid>
