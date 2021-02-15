@@ -1,4 +1,5 @@
-import React from 'react';
+import firebase from 'firebase/app';
+import React, { useState, useEffect } from 'react';
 import {
   Button,
   TableContainer,
@@ -10,6 +11,8 @@ import {
   Paper,
   makeStyles
 } from '@material-ui/core';
+
+import FirebaseService from '../services/Firebase.serivce';
 
 const useStyles = makeStyles({
   table: {
@@ -23,82 +26,144 @@ const useStyles = makeStyles({
   }
 });
 
-const rows = [
-  {
-    name: 'Goalie 1',
-    goals: 1,
-    goalsAllowed: 2,
-    ownGoals: 3,
-  },
-  {
-    name: 'Striker 1',
-    goals: 4,
-    goalsAllowed: 5,
-    ownGoals: 6,
-  },
-  {
-    name: 'Goalie 2',
-    goals: 7,
-    ownGoals: 9,
-  },
-  {
-    name: 'Striker 2',
-    goals: 10,
-    ownGoals: 12,
-  }
-];
-
 export default function Scoreboard() {
   const classes = useStyles();
+  const [scoreboardStats, setScoreboardStats] = useState([]);
+  const [teamOneScore, setTeamOneScore] = useState('00');
+  const [teamTwoScore, setTeamTwoScore] = useState('00');
+  let isIncrementingScore = true;
+  let scoreboardRef = FirebaseService.getDatabaseRef('scoreboard');
+
+  useEffect(() => {
+    scoreboardRef.on('value', snap => {
+      const scores = snap.val();
+      setScoreboardStats(Object.values(scores));
+      calculateTeamScores(scores);
+    });
+    // TODO: fix the use effect thing - scoreboardRef gets recreated on every update - probably memory leak
+  }, []);
+
+  const calculateTeamScores = (scores) => {
+    const { goalie_one, goalie_two, striker_one, striker_two } = scores;
+    const teamOneScore = goalie_one.goals + striker_one.goals + goalie_two.own_goals + striker_two.own_goals;
+    const teamTwoScore = goalie_two.goals + striker_two.goals + goalie_one.own_goals + striker_one.own_goals;
+    setTeamOneScore(teamOneScore);
+    setTeamTwoScore(teamTwoScore);
+  }
 
   const handleGoalieOneGoalClicked = () => {
-    console.log('goalie 1 goal');
+    let modifier;
+    if (isIncrementingScore) {
+      modifier = firebase.database.ServerValue.increment(1)
+    } else {
+      modifier = firebase.database.ServerValue.increment(-1)
+    }
+    scoreboardRef.child('goalie_one/goals').set(modifier);
+    scoreboardRef.child('goalie_two/goals_allowed').set(modifier);
   }
 
   const handleGoalieOneOwnGoalClicked = () => {
-    console.log('goalie 1 own goal');
+    let modifier;
+    if (isIncrementingScore) {
+      modifier = firebase.database.ServerValue.increment(1)
+    } else {
+      modifier = firebase.database.ServerValue.increment(-1)
+    }
+    scoreboardRef.child('goalie_one/own_goals').set(modifier);
+    scoreboardRef.child('goalie_one/goals_allowed').set(modifier);
   }
 
   const handleStrikerOneGoalClicked = () => {
-    console.log('striker 1 goal');
+    let modifier;
+    if (isIncrementingScore) {
+      modifier = firebase.database.ServerValue.increment(1)
+    } else {
+      modifier = firebase.database.ServerValue.increment(-1)
+    }
+    scoreboardRef.child('striker_one/goals').set(modifier);
+    scoreboardRef.child('goalie_two/goals_allowed').set(modifier);
   }
 
   const handleStrikerOneOwnGoalClicked = () => {
-    console.log('striker 1 own goal');
+    let modifier;
+    if (isIncrementingScore) {
+      modifier = firebase.database.ServerValue.increment(1)
+    } else {
+      modifier = firebase.database.ServerValue.increment(-1)
+    }
+    scoreboardRef.child('striker_one/own_goals').set(modifier);
+    scoreboardRef.child('goalie_one/goals_allowed').set(modifier);
   }
 
   const handleGoalieTwoGoalClicked = () => {
-    console.log('goalie 2 goal');
+    let modifier;
+    if (isIncrementingScore) {
+      modifier = firebase.database.ServerValue.increment(1)
+    } else {
+      modifier = firebase.database.ServerValue.increment(-1)
+    }
+    scoreboardRef.child('goalie_two/goals').set(modifier);
+    scoreboardRef.child('goalie_one/goals_allowed').set(modifier);
   }
 
   const handleGoalieTwoOwnGoalClicked = () => {
-    console.log('goalie 2 own goal');
+    let modifier;
+    if (isIncrementingScore) {
+      modifier = firebase.database.ServerValue.increment(1)
+    } else {
+      modifier = firebase.database.ServerValue.increment(-1)
+    }
+    scoreboardRef.child('goalie_two/own_goals').set(modifier);
+    scoreboardRef.child('goalie_two/goals_allowed').set(modifier);
   }
 
   const handleStrikerTwoGoalClicked = () => {
-    console.log('striker 2 goal');
+    let modifier;
+    if (isIncrementingScore) {
+      modifier = firebase.database.ServerValue.increment(1)
+    } else {
+      modifier = firebase.database.ServerValue.increment(-1)
+    }
+    scoreboardRef.child('striker_two/goals').set(modifier);
+    scoreboardRef.child('goalie_one/goals_allowed').set(modifier);
   }
 
   const handleStrikerTwoOwnGoalClicked = () => {
-    console.log('striker 2 own goal');
+    let modifier;
+    if (isIncrementingScore) {
+      modifier = firebase.database.ServerValue.increment(1)
+    } else {
+      modifier = firebase.database.ServerValue.increment(-1)
+    }
+    scoreboardRef.child('striker_two/own_goals').set(modifier);
+    scoreboardRef.child('goalie_two/goals_allowed').set(modifier);
+  }
+
+  const handleResetGameClicked = () => {
+    scoreboardRef.child('goalie_one/goals').set(0);
+    scoreboardRef.child('goalie_one/goals_allowed').set(0);
+    scoreboardRef.child('goalie_one/own_goals').set(0);
+    scoreboardRef.child('striker_one/goals').set(0);
+    scoreboardRef.child('striker_one/own_goals').set(0);
+    scoreboardRef.child('goalie_two/goals').set(0);
+    scoreboardRef.child('goalie_two/goals_allowed').set(0);
+    scoreboardRef.child('goalie_two/own_goals').set(0);
+    scoreboardRef.child('striker_two/goals').set(0);
+    scoreboardRef.child('striker_two/own_goals').set(0);
   }
 
   const handlePlusMinusClicked = () => {
-    console.log('plus minus');
+    isIncrementingScore = !isIncrementingScore;
   }
 
   const handleViewStatsClicked = () => {
     console.log('view stats');
   }
 
-  const handleResetGameClicked = () => {
-    console.log('reset game');
-  }
-
   return (
     <>
       <div className={classes.scoreboard}>
-        <span className={classes.scoreboardText}>00 : 00</span>
+        <span className={classes.scoreboardText}>{teamOneScore} : {teamTwoScore}</span>
       </div>
       <br />
       <Button variant="contained" onClick={handleGoalieOneGoalClicked} color="primary">Goalie 1 Goal</Button>
@@ -126,14 +191,14 @@ export default function Scoreboard() {
             </TableRow>
           </TableHead>
           <TableBody>
-            {rows.map((row) => (
+            {scoreboardStats.map((row) => (
               <TableRow key={row.name}>
                 <TableCell component="th" scope="row">
                   {row.name}
                 </TableCell>
                 <TableCell align="right">{row.goals}</TableCell>
-                <TableCell align="right">{row.goalsAllowed}</TableCell>
-                <TableCell align="right">{row.ownGoals}</TableCell>
+                <TableCell align="right">{row.goals_allowed}</TableCell>
+                <TableCell align="right">{row.own_goals}</TableCell>
               </TableRow>
             ))}
           </TableBody>
