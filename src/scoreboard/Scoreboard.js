@@ -39,13 +39,11 @@ const rows = [
   {
     name: 'Goalie 2',
     goals: 7,
-    goalsAllowed: 8,
     ownGoals: 9,
   },
   {
     name: 'Striker 2',
     goals: 10,
-    goalsAllowed: 11,
     ownGoals: 12,
   }
 ];
