@@ -249,7 +249,7 @@ export default function Scoreboard() {
         <Grid item xs={4}>
           <Button
             variant="outlined" 
-            ullWidth className={classes.scoreButton}
+            fullWidth className={classes.scoreButton}
             onClick={handlePlusMinusClicked}
             color="default">
               +/-
@@ -258,7 +258,7 @@ export default function Scoreboard() {
         <Grid item xs={4}>
           <Button
             variant="outlined" 
-            ullWidth className={classes.scoreButton}
+            fullWidth className={classes.scoreButton}
             onClick={handleViewStatsClicked}
             color="default">
               View Stats
@@ -267,7 +267,7 @@ export default function Scoreboard() {
         <Grid item xs={4}>
           <Button
             variant="outlined" 
-            ullWidth className={classes.scoreButton}
+            fullWidth className={classes.scoreButton}
             onClick={handleResetGameClicked}
             color="default">
               Reset Game
