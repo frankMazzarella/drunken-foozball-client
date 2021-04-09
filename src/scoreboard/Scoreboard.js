@@ -16,20 +16,23 @@ import {
 import FirebaseService from '../services/Firebase.serivce';
 
 const useStyles = makeStyles({
-  table: {
-    minWidth: 650,
-  },
   scoreboard: {
     backgroundColor: '#000',
     textAlign: 'center',
   },
   scoreboardText: {
     color: 'red',
-    fontSize: '6em',
+    fontSize: '8em',
     fontFamily: 'ds-digital',
   },
   scoreButton: {
     minHeight: '75px',
+  },
+  table: {
+    width: '100%',
+  },
+  tableHeader: {
+    fontWeight: 'bold',
   }
 });
 
@@ -38,16 +41,16 @@ export default function Scoreboard() {
   const [scoreboardStats, setScoreboardStats] = useState([]);
   const [teamOneScore, setTeamOneScore] = useState('00');
   const [teamTwoScore, setTeamTwoScore] = useState('00');
-  let isIncrementingScore = true;
+  const [subtractPoint, setSubtractPoint] = useState(false);
   let scoreboardRef = FirebaseService.getDatabaseRef('scoreboard');
 
   useEffect(() => {
     scoreboardRef.on('value', snap => {
+      console.log('// TODO: IM A MEMORY LEAK');
       const scores = snap.val();
       setScoreboardStats(Object.values(scores));
       calculateTeamScores(scores);
     });
-    // TODO: fix the use effect thing - scoreboardRef gets recreated on every update - probably memory leak
   }, []);
 
   const calculateTeamScores = (scores) => {
@@ -60,90 +63,98 @@ export default function Scoreboard() {
 
   const handleGoalieOneGoalClicked = () => {
     let modifier;
-    if (isIncrementingScore) {
-      modifier = firebase.database.ServerValue.increment(1)
-    } else {
+    if (subtractPoint) {
       modifier = firebase.database.ServerValue.increment(-1)
+    } else {
+      modifier = firebase.database.ServerValue.increment(1)
     }
     scoreboardRef.child('goalie_one/goals').set(modifier);
     scoreboardRef.child('goalie_two/goals_allowed').set(modifier);
+    setSubtractPoint(false);
   }
 
   const handleGoalieOneOwnGoalClicked = () => {
     let modifier;
-    if (isIncrementingScore) {
-      modifier = firebase.database.ServerValue.increment(1)
-    } else {
+    if (subtractPoint) {
       modifier = firebase.database.ServerValue.increment(-1)
+    } else {
+      modifier = firebase.database.ServerValue.increment(1)
     }
     scoreboardRef.child('goalie_one/own_goals').set(modifier);
     scoreboardRef.child('goalie_one/goals_allowed').set(modifier);
+    setSubtractPoint(false);
   }
 
   const handleStrikerOneGoalClicked = () => {
     let modifier;
-    if (isIncrementingScore) {
-      modifier = firebase.database.ServerValue.increment(1)
-    } else {
+    if (subtractPoint) {
       modifier = firebase.database.ServerValue.increment(-1)
+    } else {
+      modifier = firebase.database.ServerValue.increment(1)
     }
     scoreboardRef.child('striker_one/goals').set(modifier);
     scoreboardRef.child('goalie_two/goals_allowed').set(modifier);
+    setSubtractPoint(false);
   }
 
   const handleStrikerOneOwnGoalClicked = () => {
     let modifier;
-    if (isIncrementingScore) {
-      modifier = firebase.database.ServerValue.increment(1)
-    } else {
+    if (subtractPoint) {
       modifier = firebase.database.ServerValue.increment(-1)
+    } else {
+      modifier = firebase.database.ServerValue.increment(1)
     }
     scoreboardRef.child('striker_one/own_goals').set(modifier);
     scoreboardRef.child('goalie_one/goals_allowed').set(modifier);
+    setSubtractPoint(false);
   }
 
   const handleGoalieTwoGoalClicked = () => {
     let modifier;
-    if (isIncrementingScore) {
-      modifier = firebase.database.ServerValue.increment(1)
-    } else {
+    if (subtractPoint) {
       modifier = firebase.database.ServerValue.increment(-1)
+    } else {
+      modifier = firebase.database.ServerValue.increment(1)
     }
     scoreboardRef.child('goalie_two/goals').set(modifier);
     scoreboardRef.child('goalie_one/goals_allowed').set(modifier);
+    setSubtractPoint(false);
   }
 
   const handleGoalieTwoOwnGoalClicked = () => {
     let modifier;
-    if (isIncrementingScore) {
-      modifier = firebase.database.ServerValue.increment(1)
-    } else {
+    if (subtractPoint) {
       modifier = firebase.database.ServerValue.increment(-1)
+    } else {
+      modifier = firebase.database.ServerValue.increment(1)
     }
     scoreboardRef.child('goalie_two/own_goals').set(modifier);
     scoreboardRef.child('goalie_two/goals_allowed').set(modifier);
+    setSubtractPoint(false);
   }
 
   const handleStrikerTwoGoalClicked = () => {
     let modifier;
-    if (isIncrementingScore) {
-      modifier = firebase.database.ServerValue.increment(1)
-    } else {
+    if (subtractPoint) {
       modifier = firebase.database.ServerValue.increment(-1)
+    } else {
+      modifier = firebase.database.ServerValue.increment(1)
     }
     scoreboardRef.child('striker_two/goals').set(modifier);
     scoreboardRef.child('goalie_one/goals_allowed').set(modifier);
+    setSubtractPoint(false);
   }
 
   const handleStrikerTwoOwnGoalClicked = () => {
     let modifier;
-    if (isIncrementingScore) {
-      modifier = firebase.database.ServerValue.increment(1)
-    } else {
+    if (subtractPoint) {
       modifier = firebase.database.ServerValue.increment(-1)
+    } else {
+      modifier = firebase.database.ServerValue.increment(1)
     }
     scoreboardRef.child('striker_two/own_goals').set(modifier);
     scoreboardRef.child('goalie_two/goals_allowed').set(modifier);
+    setSubtractPoint(false);
   }
 
   const handleResetGameClicked = () => {
@@ -160,7 +171,7 @@ export default function Scoreboard() {
   }
 
   const handlePlusMinusClicked = () => {
-    isIncrementingScore = !isIncrementingScore;
+    setSubtractPoint(!subtractPoint);
   }
 
   const handleViewStatsClicked = () => {
@@ -181,7 +192,10 @@ export default function Scoreboard() {
             fullWidth className={classes.scoreButton}
             onClick={handleGoalieOneGoalClicked}
             color="primary">
-              Goalie 1 Goal
+              {subtractPoint
+                ? "Subtract Goalie 1 Goal"
+                : "Goalie 1 Goal"
+              }
           </Button>
         </Grid>
         <Grid item xs={6}>
@@ -190,7 +204,10 @@ export default function Scoreboard() {
             fullWidth className={classes.scoreButton}
             onClick={handleGoalieTwoGoalClicked}
             color="primary">
-              Goalie 2 Goal
+              {subtractPoint
+                ? "Subtract Goalie 2 Goal"
+                : "Goalie 2 Goal"
+              }
           </Button>
         </Grid>
         <Grid item xs={6}>
@@ -199,7 +216,10 @@ export default function Scoreboard() {
             fullWidth className={classes.scoreButton}
             onClick={handleGoalieOneOwnGoalClicked}
             color="default">
-              Goalie 1 Own Goal
+              {subtractPoint
+                ? "Subtract Goalie 1 Own Goal"
+                : "Goalie 1 Own Goal"
+              }
           </Button>
         </Grid>
         <Grid item xs={6}>
@@ -208,7 +228,10 @@ export default function Scoreboard() {
             fullWidth className={classes.scoreButton}
             onClick={handleGoalieTwoOwnGoalClicked}
             color="default">
-              Goalie 2 Own Goal
+              {subtractPoint
+                ? "Subtract Goalie 2 Own Goal"
+                : "Goalie 2 Own Goal"
+              }
           </Button>
         </Grid>
         <Grid item xs={6}>
@@ -217,7 +240,10 @@ export default function Scoreboard() {
             fullWidth className={classes.scoreButton}
             onClick={handleStrikerOneGoalClicked}
             color="primary">
-              Striker 1 Goal
+              {subtractPoint
+                ? "Subtract Striker 1 Goal"
+                : "Striker 1 Goal"
+              }
           </Button>
         </Grid>
         <Grid item xs={6}>
@@ -226,7 +252,10 @@ export default function Scoreboard() {
             fullWidth className={classes.scoreButton}
             onClick={handleStrikerTwoGoalClicked}
             color="primary">
-              Striker 2 Goal
+              {subtractPoint
+                ? "Subtract Striker 2 Goal"
+                : "Striker 2 Goal"
+              }
           </Button>
         </Grid>
         <Grid item xs={6}>
@@ -235,7 +264,10 @@ export default function Scoreboard() {
             fullWidth className={classes.scoreButton}
             onClick={handleStrikerOneOwnGoalClicked}
             color="default">
-              Striker 1 Own Goal
+              {subtractPoint
+                ? "Subtract Striker 1 Own Goal"
+                : "Striker 1 Own Goal"
+              }
           </Button>
         </Grid>
         <Grid item xs={6}>
@@ -244,7 +276,10 @@ export default function Scoreboard() {
             fullWidth className={classes.scoreButton}
             onClick={handleStrikerTwoOwnGoalClicked}
             color="default">
-              Striker 2 Own Goal
+              {subtractPoint
+                ? "Subtract Striker 2 Own Goal"
+                : "Striker 2 Own Goal"
+              }
           </Button>
         </Grid>
         <Grid item xs={4}>
@@ -275,15 +310,14 @@ export default function Scoreboard() {
           </Button>
         </Grid>
       </Grid>
-      {/*
       <TableContainer component={Paper}>
-        <Table className={classes.table} size="small" aria-label="a dense table">
+        <Table size="small">
           <TableHead>
             <TableRow>
-              <TableCell>Player</TableCell>
-              <TableCell align="right">G</TableCell>
-              <TableCell align="right">GA</TableCell>
-              <TableCell align="right">OG</TableCell>
+              <TableCell className={classes.tableHeader}>Player</TableCell>
+              <TableCell className={classes.tableHeader} align="right">G</TableCell>
+              <TableCell className={classes.tableHeader} align="right">GA</TableCell>
+              <TableCell className={classes.tableHeader} align="right">OG</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -299,7 +333,7 @@ export default function Scoreboard() {
             ))}
           </TableBody>
         </Table>
-      </TableContainer> */}
+      </TableContainer>
     </>
   );
 }
