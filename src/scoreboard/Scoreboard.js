@@ -175,37 +175,103 @@ export default function Scoreboard() {
           </div>
         </Grid>
         <Grid item xs={6}>
-          <Button variant="contained" fullWidth className={classes.scoreButton} onClick={handleGoalieOneGoalClicked} color="primary">Goalie 1 Goal</Button>
+          <Button
+            variant="contained"
+            fullWidth className={classes.scoreButton}
+            onClick={handleGoalieOneGoalClicked}
+            color="primary">
+              Goalie 1 Goal
+          </Button>
         </Grid>
         <Grid item xs={6}>
-          <Button variant="contained" fullWidth className={classes.scoreButton} onClick={handleGoalieTwoGoalClicked} color="primary">Goalie 2 Goal</Button>
+          <Button
+            variant="contained"
+            fullWidth className={classes.scoreButton}
+            onClick={handleGoalieTwoGoalClicked}
+            color="primary">
+              Goalie 2 Goal
+          </Button>
         </Grid>
         <Grid item xs={6}>
-          <Button variant="contained" fullWidth className={classes.scoreButton} onClick={handleGoalieOneOwnGoalClicked} color="default">Goalie 1 Own Goal</Button>
+          <Button
+            variant="contained"
+            fullWidth className={classes.scoreButton}
+            onClick={handleGoalieOneOwnGoalClicked}
+            color="default">
+              Goalie 1 Own Goal
+          </Button>
         </Grid>
         <Grid item xs={6}>
-          <Button variant="contained" fullWidth className={classes.scoreButton} onClick={handleGoalieTwoOwnGoalClicked} color="default">Goalie 2 Own Goal</Button>
+          <Button
+            variant="contained"
+            fullWidth className={classes.scoreButton}
+            onClick={handleGoalieTwoOwnGoalClicked}
+            color="default">
+              Goalie 2 Own Goal
+          </Button>
         </Grid>
         <Grid item xs={6}>
-          <Button variant="contained" fullWidth className={classes.scoreButton} onClick={handleStrikerOneGoalClicked} color="primary">Striker 1 Goal</Button>
+          <Button
+            variant="contained"
+            fullWidth className={classes.scoreButton}
+            onClick={handleStrikerOneGoalClicked}
+            color="primary">
+              Striker 1 Goal
+          </Button>
         </Grid>
         <Grid item xs={6}>
-          <Button variant="contained" fullWidth className={classes.scoreButton} onClick={handleStrikerTwoGoalClicked} color="primary">Striker 2 Goal</Button>
+          <Button
+            variant="contained"
+            fullWidth className={classes.scoreButton}
+            onClick={handleStrikerTwoGoalClicked}
+            color="primary">
+              Striker 2 Goal
+          </Button>
         </Grid>
         <Grid item xs={6}>
-          <Button variant="contained" fullWidth className={classes.scoreButton} onClick={handleStrikerOneOwnGoalClicked} color="default">Striker 1 Own Goal</Button>
+          <Button
+            variant="contained"
+            fullWidth className={classes.scoreButton}
+            onClick={handleStrikerOneOwnGoalClicked}
+            color="default">
+              Striker 1 Own Goal
+          </Button>
         </Grid>
         <Grid item xs={6}>
-          <Button variant="contained" fullWidth className={classes.scoreButton} onClick={handleStrikerTwoOwnGoalClicked} color="default">Striker 2 Own Goal</Button>
+          <Button
+            variant="contained"
+            fullWidth className={classes.scoreButton}
+            onClick={handleStrikerTwoOwnGoalClicked}
+            color="default">
+              Striker 2 Own Goal
+          </Button>
         </Grid>
         <Grid item xs={4}>
-          <Button variant="outlined" fullWidth className={classes.scoreButton} onClick={handlePlusMinusClicked} color="default">+/-</Button>
+          <Button
+            variant="outlined" 
+            ullWidth className={classes.scoreButton}
+            onClick={handlePlusMinusClicked}
+            color="default">
+              +/-
+          </Button>
         </Grid>
         <Grid item xs={4}>
-          <Button variant="outlined" fullWidth className={classes.scoreButton} onClick={handleViewStatsClicked} color="default">View Stats</Button>
+          <Button
+            variant="outlined" 
+            ullWidth className={classes.scoreButton}
+            onClick={handleViewStatsClicked}
+            color="default">
+              View Stats
+          </Button>
         </Grid>
         <Grid item xs={4}>
-          <Button variant="outlined" fullWidth className={classes.scoreButton} onClick={handleResetGameClicked} color="default">Reset Game</Button>
+          <Button
+            variant="outlined" 
+            ullWidth className={classes.scoreButton}
+            onClick={handleResetGameClicked}
+            color="default">
+              Reset Game
+          </Button>
         </Grid>
       </Grid>
       {/*
