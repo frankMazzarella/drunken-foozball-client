@@ -9,7 +9,8 @@ import {
   TableCell,
   TableBody,
   Paper,
-  makeStyles
+  makeStyles,
+  Grid,
 } from '@material-ui/core';
 
 import FirebaseService from '../services/Firebase.serivce';
@@ -20,17 +21,22 @@ const useStyles = makeStyles({
   },
   scoreboard: {
     backgroundColor: '#000',
+    textAlign: 'center',
   },
   scoreboardText: {
     color: 'red',
+    fontSize: '4em',
+  },
+  scoreButton: {
+    minHeight: '75px',
   }
 });
 
 export default function Scoreboard() {
   const classes = useStyles();
   const [scoreboardStats, setScoreboardStats] = useState([]);
-  const [teamOneScore, setTeamOneScore] = useState('00');
-  const [teamTwoScore, setTeamTwoScore] = useState('00');
+  const [teamOneScore, setTeamOneScore] = useState('0');
+  const [teamTwoScore, setTeamTwoScore] = useState('0');
   let isIncrementingScore = true;
   let scoreboardRef = FirebaseService.getDatabaseRef('scoreboard');
 
@@ -162,24 +168,47 @@ export default function Scoreboard() {
 
   return (
     <>
-      <div className={classes.scoreboard}>
-        <span className={classes.scoreboardText}>{teamOneScore} : {teamTwoScore}</span>
-      </div>
-      <br />
-      <Button variant="contained" onClick={handleGoalieOneGoalClicked} color="primary">Goalie 1 Goal</Button>
-      <Button variant="contained" onClick={handleGoalieOneOwnGoalClicked} color="primary">Goalie 1 Own Goal</Button>
-      <Button variant="contained" onClick={handleStrikerOneGoalClicked} color="primary">Striker 1 Goal</Button>
-      <Button variant="contained" onClick={handleStrikerOneOwnGoalClicked} color="primary">Striker 1 Own Goal</Button>
-      <br /><br />
-      <Button variant="contained" onClick={handleGoalieTwoGoalClicked} color="primary">Goalie 2 Goal</Button>
-      <Button variant="contained" onClick={handleGoalieTwoOwnGoalClicked} color="primary">Goalie 2 Own Goal</Button>
-      <Button variant="contained" onClick={handleStrikerTwoGoalClicked} color="primary">Striker 2 Goal</Button>
-      <Button variant="contained" onClick={handleStrikerTwoOwnGoalClicked} color="primary">Striker 2 Own Goal</Button>
-      <br /><br />
-      <Button variant="contained" onClick={handlePlusMinusClicked} color="primary">+/-</Button>
-      <Button variant="contained" onClick={handleViewStatsClicked} color="primary">View Stats</Button>
-      <Button variant="contained" onClick={handleResetGameClicked} color="primary">Reset Game</Button>
-      <br /><br />
+      <Grid container spacing={0}>
+        <Grid item xs={12}>
+          <div className={classes.scoreboard}>
+            <span className={classes.scoreboardText}>{teamOneScore} : {teamTwoScore}</span>
+          </div>
+        </Grid>
+        <Grid item xs={6}>
+          <Button variant="contained" fullWidth className={classes.scoreButton} onClick={handleGoalieOneGoalClicked} color="primary">Goalie 1 Goal</Button>
+        </Grid>
+        <Grid item xs={6}>
+          <Button variant="contained" fullWidth className={classes.scoreButton} onClick={handleGoalieTwoGoalClicked} color="primary">Goalie 2 Goal</Button>
+        </Grid>
+        <Grid item xs={6}>
+          <Button variant="contained" fullWidth className={classes.scoreButton} onClick={handleGoalieOneOwnGoalClicked} color="default">Goalie 1 Own Goal</Button>
+        </Grid>
+        <Grid item xs={6}>
+          <Button variant="contained" fullWidth className={classes.scoreButton} onClick={handleGoalieTwoOwnGoalClicked} color="default">Goalie 2 Own Goal</Button>
+        </Grid>
+        <Grid item xs={6}>
+          <Button variant="contained" fullWidth className={classes.scoreButton} onClick={handleStrikerOneGoalClicked} color="primary">Striker 1 Goal</Button>
+        </Grid>
+        <Grid item xs={6}>
+          <Button variant="contained" fullWidth className={classes.scoreButton} onClick={handleStrikerTwoGoalClicked} color="primary">Striker 2 Goal</Button>
+        </Grid>
+        <Grid item xs={6}>
+          <Button variant="contained" fullWidth className={classes.scoreButton} onClick={handleStrikerOneOwnGoalClicked} color="default">Striker 1 Own Goal</Button>
+        </Grid>
+        <Grid item xs={6}>
+          <Button variant="contained" fullWidth className={classes.scoreButton} onClick={handleStrikerTwoOwnGoalClicked} color="default">Striker 2 Own Goal</Button>
+        </Grid>
+        <Grid item xs={4}>
+          <Button variant="outlined" fullWidth className={classes.scoreButton} onClick={handlePlusMinusClicked} color="default">+/-</Button>
+        </Grid>
+        <Grid item xs={4}>
+          <Button variant="outlined" fullWidth className={classes.scoreButton} onClick={handleViewStatsClicked} color="default">View Stats</Button>
+        </Grid>
+        <Grid item xs={4}>
+          <Button variant="outlined" fullWidth className={classes.scoreButton} onClick={handleResetGameClicked} color="default">Reset Game</Button>
+        </Grid>
+      </Grid>
+      {/*
       <TableContainer component={Paper}>
         <Table className={classes.table} size="small" aria-label="a dense table">
           <TableHead>
@@ -203,7 +232,7 @@ export default function Scoreboard() {
             ))}
           </TableBody>
         </Table>
-      </TableContainer>
+      </TableContainer> */}
     </>
   );
 }
