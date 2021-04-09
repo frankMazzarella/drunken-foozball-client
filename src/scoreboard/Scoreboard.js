@@ -25,7 +25,8 @@ const useStyles = makeStyles({
   },
   scoreboardText: {
     color: 'red',
-    fontSize: '4em',
+    fontSize: '6em',
+    fontFamily: 'ds-digital',
   },
   scoreButton: {
     minHeight: '75px',
@@ -35,8 +36,8 @@ const useStyles = makeStyles({
 export default function Scoreboard() {
   const classes = useStyles();
   const [scoreboardStats, setScoreboardStats] = useState([]);
-  const [teamOneScore, setTeamOneScore] = useState('0');
-  const [teamTwoScore, setTeamTwoScore] = useState('0');
+  const [teamOneScore, setTeamOneScore] = useState('00');
+  const [teamTwoScore, setTeamTwoScore] = useState('00');
   let isIncrementingScore = true;
   let scoreboardRef = FirebaseService.getDatabaseRef('scoreboard');
 
@@ -53,8 +54,8 @@ export default function Scoreboard() {
     const { goalie_one, goalie_two, striker_one, striker_two } = scores;
     const teamOneScore = goalie_one.goals + striker_one.goals + goalie_two.own_goals + striker_two.own_goals;
     const teamTwoScore = goalie_two.goals + striker_two.goals + goalie_one.own_goals + striker_one.own_goals;
-    setTeamOneScore(teamOneScore);
-    setTeamTwoScore(teamTwoScore);
+    setTeamOneScore(teamOneScore.toString().padStart(2, '0'));
+    setTeamTwoScore(teamTwoScore.toString().padStart(2, '0'));
   }
 
   const handleGoalieOneGoalClicked = () => {
@@ -248,7 +249,7 @@ export default function Scoreboard() {
         </Grid>
         <Grid item xs={4}>
           <Button
-            variant="outlined" 
+            variant="outlined"
             fullWidth className={classes.scoreButton}
             onClick={handlePlusMinusClicked}
             color="default">
@@ -257,7 +258,7 @@ export default function Scoreboard() {
         </Grid>
         <Grid item xs={4}>
           <Button
-            variant="outlined" 
+            variant="outlined"
             fullWidth className={classes.scoreButton}
             onClick={handleViewStatsClicked}
             color="default">
@@ -266,7 +267,7 @@ export default function Scoreboard() {
         </Grid>
         <Grid item xs={4}>
           <Button
-            variant="outlined" 
+            variant="outlined"
             fullWidth className={classes.scoreButton}
             onClick={handleResetGameClicked}
             color="default">
