@@ -22,6 +22,7 @@ const useStyles = makeStyles({
   scoreboard: {
     backgroundColor: '#000',
     textAlign: 'center',
+    borderRadius: '5px',
   },
   scoreboardText: {
     color: 'red',
@@ -49,7 +50,6 @@ export default function Scoreboard() {
 
   useEffect(() => {
     scoreboardRef.on('value', snap => {
-      console.log('// TODO: IM A MEMORY LEAK');
       const scores = snap.val();
       setScoreboardStats(Object.values(scores));
       calculateTeamScores(scores);
@@ -326,9 +326,7 @@ export default function Scoreboard() {
             <TableBody>
               {scoreboardStats.map((row) => (
                 <TableRow key={row.name}>
-                  <TableCell component="th" scope="row">
-                    {row.name}
-                  </TableCell>
+                  <TableCell component="th" scope="row">{row.name}</TableCell>
                   <TableCell align="right">{row.goals}</TableCell>
                   <TableCell align="right">{row.goals_allowed}</TableCell>
                   <TableCell align="right">{row.own_goals}</TableCell>
