@@ -16,6 +16,9 @@ import {
 import FirebaseService from '../services/Firebase.serivce';
 
 const useStyles = makeStyles({
+  container: {
+    maxWidth: '800px',
+  },
   scoreboard: {
     backgroundColor: '#000',
     textAlign: 'center',
@@ -174,166 +177,167 @@ export default function Scoreboard() {
     setSubtractPoint(!subtractPoint);
   }
 
-  const handleViewStatsClicked = () => {
-    console.log('view stats');
+  const handleSaveStatsClicked = () => {
+    console.log('save stats');
   }
 
   return (
-    <>
-      <Grid container spacing={0}>
-        <Grid item xs={12}>
-          <div className={classes.scoreboard}>
-            <span className={classes.scoreboardText}>{teamOneScore} : {teamTwoScore}</span>
-          </div>
-        </Grid>
-        <Grid item xs={6}>
-          <Button
-            variant="contained"
-            fullWidth className={classes.scoreButton}
-            onClick={handleGoalieOneGoalClicked}
-            color="primary">
-              {subtractPoint
-                ? "Subtract Goalie 1 Goal"
-                : "Goalie 1 Goal"
-              }
-          </Button>
-        </Grid>
-        <Grid item xs={6}>
-          <Button
-            variant="contained"
-            fullWidth className={classes.scoreButton}
-            onClick={handleGoalieTwoGoalClicked}
-            color="primary">
-              {subtractPoint
-                ? "Subtract Goalie 2 Goal"
-                : "Goalie 2 Goal"
-              }
-          </Button>
-        </Grid>
-        <Grid item xs={6}>
-          <Button
-            variant="contained"
-            fullWidth className={classes.scoreButton}
-            onClick={handleGoalieOneOwnGoalClicked}
-            color="default">
-              {subtractPoint
-                ? "Subtract Goalie 1 Own Goal"
-                : "Goalie 1 Own Goal"
-              }
-          </Button>
-        </Grid>
-        <Grid item xs={6}>
-          <Button
-            variant="contained"
-            fullWidth className={classes.scoreButton}
-            onClick={handleGoalieTwoOwnGoalClicked}
-            color="default">
-              {subtractPoint
-                ? "Subtract Goalie 2 Own Goal"
-                : "Goalie 2 Own Goal"
-              }
-          </Button>
-        </Grid>
-        <Grid item xs={6}>
-          <Button
-            variant="contained"
-            fullWidth className={classes.scoreButton}
-            onClick={handleStrikerOneGoalClicked}
-            color="primary">
-              {subtractPoint
-                ? "Subtract Striker 1 Goal"
-                : "Striker 1 Goal"
-              }
-          </Button>
-        </Grid>
-        <Grid item xs={6}>
-          <Button
-            variant="contained"
-            fullWidth className={classes.scoreButton}
-            onClick={handleStrikerTwoGoalClicked}
-            color="primary">
-              {subtractPoint
-                ? "Subtract Striker 2 Goal"
-                : "Striker 2 Goal"
-              }
-          </Button>
-        </Grid>
-        <Grid item xs={6}>
-          <Button
-            variant="contained"
-            fullWidth className={classes.scoreButton}
-            onClick={handleStrikerOneOwnGoalClicked}
-            color="default">
-              {subtractPoint
-                ? "Subtract Striker 1 Own Goal"
-                : "Striker 1 Own Goal"
-              }
-          </Button>
-        </Grid>
-        <Grid item xs={6}>
-          <Button
-            variant="contained"
-            fullWidth className={classes.scoreButton}
-            onClick={handleStrikerTwoOwnGoalClicked}
-            color="default">
-              {subtractPoint
-                ? "Subtract Striker 2 Own Goal"
-                : "Striker 2 Own Goal"
-              }
-          </Button>
-        </Grid>
-        <Grid item xs={4}>
-          <Button
-            variant="outlined"
-            fullWidth className={classes.scoreButton}
-            onClick={handlePlusMinusClicked}
-            color="default">
-              +/-
-          </Button>
-        </Grid>
-        <Grid item xs={4}>
-          <Button
-            variant="outlined"
-            fullWidth className={classes.scoreButton}
-            onClick={handleViewStatsClicked}
-            color="default">
-              View Stats
-          </Button>
-        </Grid>
-        <Grid item xs={4}>
-          <Button
-            variant="outlined"
-            fullWidth className={classes.scoreButton}
-            onClick={handleResetGameClicked}
-            color="default">
-              Reset Game
-          </Button>
-        </Grid>
+    <Grid className={classes.container} container spacing={1}>
+      <Grid item xs={12}>
+        <div className={classes.scoreboard}>
+          <span className={classes.scoreboardText}>{teamOneScore} : {teamTwoScore}</span>
+        </div>
       </Grid>
-      <TableContainer component={Paper}>
-        <Table size="small">
-          <TableHead>
-            <TableRow>
-              <TableCell className={classes.tableHeader}>Player</TableCell>
-              <TableCell className={classes.tableHeader} align="right">G</TableCell>
-              <TableCell className={classes.tableHeader} align="right">GA</TableCell>
-              <TableCell className={classes.tableHeader} align="right">OG</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {scoreboardStats.map((row) => (
-              <TableRow key={row.name}>
-                <TableCell component="th" scope="row">
-                  {row.name}
-                </TableCell>
-                <TableCell align="right">{row.goals}</TableCell>
-                <TableCell align="right">{row.goals_allowed}</TableCell>
-                <TableCell align="right">{row.own_goals}</TableCell>
+      <Grid item xs={6}>
+        <Button
+          variant="contained"
+          fullWidth className={classes.scoreButton}
+          onClick={handleGoalieOneGoalClicked}
+          color="primary">
+            {subtractPoint
+              ? "Subtract Goalie 1 Goal"
+              : "Goalie 1 Goal"
+            }
+        </Button>
+      </Grid>
+      <Grid item xs={6}>
+        <Button
+          variant="contained"
+          fullWidth className={classes.scoreButton}
+          onClick={handleGoalieTwoGoalClicked}
+          color="primary">
+            {subtractPoint
+              ? "Subtract Goalie 2 Goal"
+              : "Goalie 2 Goal"
+            }
+        </Button>
+      </Grid>
+      <Grid item xs={6}>
+        <Button
+          variant="contained"
+          fullWidth className={classes.scoreButton}
+          onClick={handleGoalieOneOwnGoalClicked}
+          color="default">
+            {subtractPoint
+              ? "Subtract Goalie 1 Own Goal"
+              : "Goalie 1 Own Goal"
+            }
+        </Button>
+      </Grid>
+      <Grid item xs={6}>
+        <Button
+          variant="contained"
+          fullWidth className={classes.scoreButton}
+          onClick={handleGoalieTwoOwnGoalClicked}
+          color="default">
+            {subtractPoint
+              ? "Subtract Goalie 2 Own Goal"
+              : "Goalie 2 Own Goal"
+            }
+        </Button>
+      </Grid>
+      <Grid item xs={6}>
+        <Button
+          variant="contained"
+          fullWidth className={classes.scoreButton}
+          onClick={handleStrikerOneGoalClicked}
+          color="primary">
+            {subtractPoint
+              ? "Subtract Striker 1 Goal"
+              : "Striker 1 Goal"
+            }
+        </Button>
+      </Grid>
+      <Grid item xs={6}>
+        <Button
+          variant="contained"
+          fullWidth className={classes.scoreButton}
+          onClick={handleStrikerTwoGoalClicked}
+          color="primary">
+            {subtractPoint
+              ? "Subtract Striker 2 Goal"
+              : "Striker 2 Goal"
+            }
+        </Button>
+      </Grid>
+      <Grid item xs={6}>
+        <Button
+          variant="contained"
+          fullWidth className={classes.scoreButton}
+          onClick={handleStrikerOneOwnGoalClicked}
+          color="default">
+            {subtractPoint
+              ? "Subtract Striker 1 Own Goal"
+              : "Striker 1 Own Goal"
+            }
+        </Button>
+      </Grid>
+      <Grid item xs={6}>
+        <Button
+          variant="contained"
+          fullWidth className={classes.scoreButton}
+          onClick={handleStrikerTwoOwnGoalClicked}
+          color="default">
+            {subtractPoint
+              ? "Subtract Striker 2 Own Goal"
+              : "Striker 2 Own Goal"
+            }
+        </Button>
+      </Grid>
+      <Grid item xs={4}>
+        <Button
+          variant="outlined"
+          fullWidth className={classes.scoreButton}
+          onClick={handlePlusMinusClicked}
+          color="default">
+            +/-
+        </Button>
+      </Grid>
+      <Grid item xs={4}>
+        <Button
+          disabled
+          variant="outlined"
+          fullWidth className={classes.scoreButton}
+          onClick={handleSaveStatsClicked}
+          color="default">
+            Save Stats
+        </Button>
+      </Grid>
+      <Grid item xs={4}>
+        <Button
+          variant="outlined"
+          fullWidth className={classes.scoreButton}
+          onClick={handleResetGameClicked}
+          color="default">
+            Reset Game
+        </Button>
+      </Grid>
+      <Grid item xs={12}>
+        <TableContainer component={Paper}>
+          <Table size="small">
+            <TableHead>
+              <TableRow>
+                <TableCell className={classes.tableHeader}>Player</TableCell>
+                <TableCell className={classes.tableHeader} align="right">G</TableCell>
+                <TableCell className={classes.tableHeader} align="right">GA</TableCell>
+                <TableCell className={classes.tableHeader} align="right">OG</TableCell>
               </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      </TableContainer>
-    </>
+            </TableHead>
+            <TableBody>
+              {scoreboardStats.map((row) => (
+                <TableRow key={row.name}>
+                  <TableCell component="th" scope="row">
+                    {row.name}
+                  </TableCell>
+                  <TableCell align="right">{row.goals}</TableCell>
+                  <TableCell align="right">{row.goals_allowed}</TableCell>
+                  <TableCell align="right">{row.own_goals}</TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </TableContainer>
+      </Grid>
+    </Grid>
   );
 }
