@@ -178,7 +178,25 @@ export default function Scoreboard() {
   }
 
   const handleSaveStatsClicked = () => {
-    console.log('save stats');
+    const body = buildEmailString();
+    window.open(`mailto:?subject=foozball results&body=${body}`);
+  }
+
+  const buildEmailString = () => {
+    let str = `
+      Game Name:
+      Team One: ${teamOneScore}
+      Team Two: ${teamTwoScore}
+    `;
+    scoreboardStats.forEach((row) => {
+      str += `
+        ${row.name}
+        Goals: ${row.goals}
+        Goals Allowed: ${row.goals_allowed ? row.goals_allowed : 'N/A'}
+        Own Goals: ${row.own_goals}
+      `;
+    });
+    return encodeURIComponent(str);
   }
 
   return (
@@ -295,7 +313,6 @@ export default function Scoreboard() {
       </Grid>
       <Grid item xs={4}>
         <Button
-          disabled
           variant="outlined"
           fullWidth className={classes.scoreButton}
           onClick={handleSaveStatsClicked}
