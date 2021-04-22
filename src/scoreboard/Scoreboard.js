@@ -63,6 +63,8 @@ export default function Scoreboard() {
       setStriker1Name(data.striker_one.name);
       setStriker2Name(data.striker_two.name);
     });
+    // TODO: look into the below warning - is it an issue?
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const calculateTeamScores = (scores) => {
