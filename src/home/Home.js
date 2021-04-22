@@ -33,17 +33,11 @@ export default function Home() {
         <br /><br />
       </Grid>
       <Grid item sm={10} lg={10}>
-        <h1 className={classes.header}>One and Done?</h1>
+        <h1 className={classes.header}>Slow Start, Fast Finish</h1>
       </Grid>
       <Grid item sm={10} lg={10}>
         <Typography className={classes.story}>
-          The 2021 Season of the Drunken Foozball League officially got underway this weekend! Only three teams were
-          available to compete, but they put on a show. Rock of Gibraltar went up 9-6 against Free Will in the opening
-          match, signalling a quick fall from grace for the defending champions, but they clamped down and pulled out
-          the win. The reigning champs dispatched S.A.M. next, but the father and son duo quickly dealt with Rock of
-          Gibraltar to return to the big stage. In two intense games, S.A.M. were able to reclaim their throne atop the
-          DFL circuit. Will Free Will right the ship and go back-to-back on NYE, or will S.A.M. take their trophies
-          back? The long road to New Year's Eve begins!
+        The 2021 Season continued with the Bunny Bowl on Easter weekend. The league christened a new site, as Rev's Garage hosted it's first tournament.  With an all new professional table and balls, Rev paired up with Kev to take down the #1 seed in the very first game!  Lep's stellar performance in goal and Bear's 35 goals led them back to the championship game, though. Along they way they shut out RoG, avenged their loss to Rev and Kev, and dispatched the Winner's Bracket Champs, Free Will, in two straight 10-6 games. The competition is fierce, but for now S.A.M. is back on a streak. Will they reclaim their New Year's Eve title?
         </Typography>
       </Grid>
     </Grid>
