@@ -7,12 +7,12 @@
         "team": "S.A.M."
       },
       {
-        "player": "Lacy",
-        "team": "Free Will"
+        "player": "Bear",
+        "team": "S.A.M."
       },
       {
-        "player": "Woodsy",
-        "team": "Rock of Gibraltar"
+        "player": "Lacy",
+        "team": "Free Will"
       }
     ],
     "history": [
@@ -32,16 +32,16 @@
     "name": "The Golden Beer",
     "race": [
       {
+        "player": "Bear",
+        "team": "S.A.M."
+      },
+      {
         "player": "Lacy",
         "team": "Free Will"
       },
       {
-        "player": "Woodsy",
-        "team": "Rock of Gibraltar"
-      },
-      {
-        "player": "Bear",
-        "team": "S.A.M."
+        "player": "Kevin",
+        "team": "Fire Breathing Rubber Duckies"
       }
     ],
     "history": [
@@ -119,16 +119,16 @@
     "name": "The You Don't Suck Anymore Award",
     "race": [
       {
-        "player": "Woodsy",
-        "team": "Rock of Gibraltar"
-      },
-      {
-        "player": "Rev",
-        "team": "Rock of Gibraltar"
+        "player": "Kevin",
+        "team": "Fire Breathing Rubber Duckies"
       },
       {
         "player": "Marissa",
         "team": "Free Will"
+      },
+      {
+        "player": "Bear",
+        "team": "S.A.M."
       }
     ],
     "history": [
