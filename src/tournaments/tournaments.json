@@ -1,5 +1,115 @@
 [
   {
+    "name": "Turkey Bowl",
+    "level": "DFL Cup",
+    "date": "November 25, 2021",
+    "location": "The Fumanti Dome",
+    "results": [
+      {
+        "finish": "Winner",
+        "team": "Free Will",
+        "points": 200
+      },
+      {
+        "finish": "Finalist",
+        "team": "S.A.M.",
+        "points": 120
+      },
+      {
+        "finish": "Semi Finalist",
+        "team": "Rock of Gibraltar",
+        "points": 55
+      },
+      {
+        "finish": "Preliminary",
+        "team": "Fire Breathing Rubber Duckies",
+        "points": 10
+      },
+      {
+        "finish": "Preliminary",
+        "team": "Guest Team",
+        "points": 0
+      }
+    ],
+    "rounds": [
+      {
+        "name": "Championship Leg 1",
+        "games": [
+          {
+            "winner": "Free Will",
+            "loser": "S.A.M.",
+            "score": "10-9"
+          }
+        ]
+      },
+      {
+        "name": "Loser's Bracket Final",
+        "games": [
+          {
+            "winner": "S.A.M.",
+            "loser": "Rock of Gibraltar",
+            "score": "10-1"
+          }
+        ]
+      },
+      {
+        "name": "Loser's Bracket Round 2",
+        "games": [
+          {
+            "winner": "Rock of Gibraltar",
+            "loser": "Fire Breathing Rubber Duckies",
+            "score": "10-5"
+          }
+        ]
+      },
+      {
+        "name": "Main Bracket Final",
+        "games": [
+          {
+            "winner": "Free Will",
+            "loser": "S.A.M.",
+            "score": "10-5"
+          }
+        ]
+      },
+      {
+        "name": "Loser's Bracket Round 1",
+        "games": [
+          {
+            "winner": "Rock of Gibraltar",
+            "loser": "Guest Team",
+            "score": "10-1"
+          }
+        ]
+      },
+      {
+        "name": "Main Bracket Round 2",
+        "games": [
+          {
+            "winner": "S.A.M.",
+            "loser": "Fire Breathing Rubber Duckies",
+            "score": "10-1"
+          },
+          {
+            "winner": "Free Will",
+            "loser": "Rock of Gibraltar",
+            "score": "10-2"
+          }
+        ]
+      },
+      {
+        "name": "Main Bracket Round 1",
+        "games": [
+          {
+            "winner": "Fire Breathing Rubber Duckies",
+            "loser": "Guest Team",
+            "score": "10-3"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "Bunny Bowl",
     "level": "DFL 200",
     "date": "April 4, 2021",

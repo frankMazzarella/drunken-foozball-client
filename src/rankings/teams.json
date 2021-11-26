@@ -7,36 +7,32 @@
     ],
     "current": {
       "rank": 1,
-      "points": 1360,
-      "season_points": 300,
-      "wins": 7,
-      "losses": 2,
+      "points": 800,
+      "season_points": 420,
+      "wins": 9,
+      "losses": 4,
       "tourn_won": 2
     },
     "career": {
       "rank": 1,
-      "wins": 23,
-      "losses": 8,
-      "tourn_won": 12,
-      "nye_wins": 1,
-      "year_end_1": 2
+      "wins": 44,
+      "losses": 12,
+      "tourn_won": 13,
+      "nye_wins": 2,
+      "year_end_1": 3
     },
     "h2h": [
       [
         "Rock of Gibraltar",
-        "6-0"
+        "11-0"
       ],
       [
         "Free Will",
-        "10-7"
+        "15-9"
       ],
       [
         "Fire Breathing Rubber Duckies",
-        "5-0"
-      ],
-      [
-        "Size Matters",
-        "0-0"
+        "9-0"
       ]
     ]
   },
@@ -47,37 +43,33 @@
       "Marissa"
     ],
     "current": {
-      "rank": 2,
-      "points": 1200,
-      "season_points": 180,
-      "wins": 4,
+      "rank": 1,
+      "points": 800,
+      "season_points": 380,
+      "wins": 7,
       "losses": 4,
-      "tourn_won": 0
+      "tourn_won": 1
     },
     "career": {
-      "rank": 2,
-      "wins": 20,
-      "losses": 13,
-      "tourn_won": 3,
+      "rank": 1,
+      "wins": 32,
+      "losses": 24,
+      "tourn_won": 4,
       "nye_wins": 1,
       "year_end_1": 0
     },
     "h2h": [
       [
         "S.A.M.",
-        "7-10"
+        "9-15"
       ],
       [
         "Rock of Gibraltar",
-        "6-3"
+        "13-7"
       ],
       [
         "Fire Breathing Rubber Duckies",
-        "4-0"
-      ],
-      [
-        "Size Matters",
-        "1-0"
+        "5-1"
       ]
     ]
   },
@@ -89,16 +81,16 @@
     ],
     "current": {
       "rank": 3,
-      "points": 300,
-      "season_points": 20,
-      "wins": 0,
-      "losses": 4,
+      "points": 215,
+      "season_points": 90,
+      "wins": 2,
+      "losses": 6,
       "tourn_won": 0
     },
     "career": {
       "rank": 2,
-      "wins": 7,
-      "losses": 14,
+      "wins": 15,
+      "losses": 24,
       "tourn_won": 0,
       "nye_wins": 0,
       "year_end_1": 0
@@ -106,19 +98,15 @@
     "h2h": [
       [
         "S.A.M.",
-        "0-6"
+        "0-11"
       ],
       [
         "Free Will",
-        "3-6"
+        "7-13"
       ],
       [
         "Fire Breathing Rubber Duckies",
-        "1-2"
-      ],
-      [
-        "Size Matters",
-        "2-0"
+        "4-2"
       ]
     ]
   },
@@ -130,16 +118,16 @@
     ],
     "current": {
       "rank": 4,
-      "points": 265,
-      "season_points": 0,
-      "wins": 0,
-      "losses": 0,
+      "points": 120,
+      "season_points": 10,
+      "wins": 1,
+      "losses": 2,
       "tourn_won": 0
     },
     "career": {
       "rank": 4,
-      "wins": 5,
-      "losses": 10,
+      "wins": 8,
+      "losses": 18,
       "tourn_won": 0,
       "nye_wins": 0,
       "year_end_1": 0
@@ -147,19 +135,15 @@
     "h2h": [
       [
         "S.A.M.",
-        "0-5"
+        "0-9"
       ],
       [
         "Rock of Gibraltar",
-        "2-1"
+        "2-4"
       ],
       [
         "Free Will",
-        "0-4"
-      ],
-      [
-        "Size Matters",
-        "2-0"
+        "1-5"
       ]
     ]
   }

@@ -33,11 +33,11 @@ export default function Home() {
         <br /><br />
       </Grid>
       <Grid item sm={10} lg={10}>
-        <h1 className={classes.header}>Slow Start, Fast Finish</h1>
+        <h1 className={classes.header}>Kicking off the Playoffs with a Bang</h1>
       </Grid>
       <Grid item sm={10} lg={10}>
         <Typography className={classes.story}>
-        The 2021 Season continued with the Bunny Bowl on Easter weekend. The league christened a new site, as Rev's Garage hosted it's first tournament.  With an all new professional table and balls, Rev paired up with Kev to take down the #1 seed in the very first game!  Lep's stellar performance in goal and Bear's 35 goals led them back to the championship game, though. Along they way they shut out RoG, avenged their loss to Rev and Kev, and dispatched the Winner's Bracket Champs, Free Will, in two straight 10-6 games. The competition is fierce, but for now S.A.M. is back on a streak. Will they reclaim their New Year's Eve title?
+        The 2021 Playoffs got their start with the Turkey Bowl, taking place in the Fumanti Dome.  It was the first ever tournament to take place at the new DFL location.  With a guest team making an appearance, the tournament started off with a win by Fire Breathing Rubber Duckies, before the usual meeting of S.A.M. and Free Will in the 2nd round.  Free Will advance to the finals first, and S.A.M. went on to easily dispatch Rock of Gibraltar to get to the rematch.  In a Finals match for the ages, Free Will took an early 8-3 lead before a strong comeback brought on a 9-9 sudden death point.  Lacy sank the game winning shot, giving Free Will their first tournament win of the year.
         </Typography>
       </Grid>
     </Grid>
